@@ -33,6 +33,9 @@ export class ChatService {
 
       if (retrievedChunks.length > 0) {
         this.logger.log(
+          `First chunk - source: ${retrievedChunks[0].source}, slide: ${retrievedChunks[0].slideNumber}`
+        );
+        this.logger.log(
           `First chunk preview: ${retrievedChunks[0].text.substring(0, 100)}...`
         );
       }
@@ -49,10 +52,7 @@ export class ChatService {
 Si extrakčný systém pre študentov.
 
 Tvoja úloha:
-IMPORTANT: NEVYTVÁRAJ nové vety. Použi výhradne text z kontextu.
-
-Na konci vždy uveď zdroj:
-(Source: file | Slide X)
+IMPORTANT: NEVYTVÁRAJ nové vety. Použi výhradne text z kontextu v presne takom znení, v akom je uvedený v prednáške.
 
 Ak odpoveď nie je v kontexte, odpíš:
 "Na základe prednášok neviem odpovedať."
@@ -92,10 +92,19 @@ Odpoveď:
       }
 
       const data = await response.json();
+      let answer = data.response.trim();
 
       this.logger.log('Response generated successfully');
+      this.logger.log(`LLM Response: ${answer}`);
 
-      return data.response;
+      // 5. Append source information from the most relevant chunk
+      if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
+        const source = retrievedChunks[0].source;
+        const slideNumber = retrievedChunks[0].slideNumber;
+        answer += `\n\n(Source: ${source} | Slide ${slideNumber})`;
+      }
+
+      return answer;
     } catch (error) {
       this.logger.error('Error in chat service:', error);
       throw error;
