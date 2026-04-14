@@ -1,13 +1,15 @@
 <div class="chat-container">
   <div class="header">
-    <h1>Where can I take you?</h1>
+    <h1>Web development course</h1>
   </div>
 
   <div class="message-area">
-    <div *ngFor="let message of messages" 
-         class="message" 
-         [class.user-message]="message.isUser"
-         [class.ai-message]="!message.isUser">
+    <div
+      *ngFor="let message of messages"
+      class="message"
+      [class.user-message]="message.isUser"
+      [class.ai-message]="!message.isUser"
+    >
       <div class="message-content">
         <span *ngIf="message.isLoading" class="loading-cursor">▊</span>
         <span *ngIf="!message.isLoading">{{ message.text }}</span>
@@ -16,18 +18,19 @@
   </div>
 
   <div class="input-row">
-    <input 
-      type="text" 
+    <input
+      type="text"
       [(ngModel)]="userInput"
       (keypress)="onKeyPress($event)"
       [disabled]="isProcessing"
-      placeholder="Ask me about travel destinations..."
+      placeholder="Ask me what you want to know..."
       class="message-input"
     />
-    <button 
+    <button
       (click)="sendMessage()"
       [disabled]="!userInput.trim() || isProcessing"
-      class="send-button">
+      class="send-button"
+    >
       Send
     </button>
   </div>
