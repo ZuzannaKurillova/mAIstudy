@@ -21,7 +21,7 @@ export class PptxParserService {
 
   async parsePptx(): Promise<TextChunk[]> {
     const workspaceRoot = process.cwd();
-    const pptxFiles = ['VAII/1.pptx'];
+    const pptxFiles = ['VAII/1.pptx', 'VAII/2.pptx', 'VAII/3.pptx', 'VAII/4.pptx', 'VAII/5.pptx', 'VAII/6.pptx', 'VAII/7.pptx', 'VAII/8.pptx', 'VAII/9.pptx', 'VAII/10.pptx'];
 
     const allChunks: TextChunk[] = [];
 
