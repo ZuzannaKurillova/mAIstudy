@@ -32,11 +32,14 @@ export class ChatService {
       this.logger.log(`Retrieved ${retrievedChunks.length} chunks`);
 
       if (retrievedChunks.length > 0) {
+        this.logger.log('All retrieved chunks:');
+        retrievedChunks.forEach((chunk, idx) => {
+          this.logger.log(
+            `  [${idx}] Slide ${chunk.slideNumber}, score: ${chunk.score}, preview: ${chunk.text.substring(0, 80)}...`
+          );
+        });
         this.logger.log(
-          `First chunk - source: ${retrievedChunks[0].source}, slide: ${retrievedChunks[0].slideNumber}`
-        );
-        this.logger.log(
-          `First chunk preview: ${retrievedChunks[0].text.substring(0, 100)}...`
+          `Using first chunk - source: ${retrievedChunks[0].source}, slide: ${retrievedChunks[0].slideNumber}`
         );
       }
 
@@ -49,7 +52,7 @@ export class ChatService {
 
       // 3. STRICT extractive prompt
       const prompt = `
-Si extrakčný systém pre študentov.
+Si extrakčný systém pre študentov. Odpovedz na otázku presným textom z prednášok. Doslova copy paste, čo tam stojí.
 
 Tvoja úloha:
 IMPORTANT: NEVYTVÁRAJ nové vety. Použi výhradne text z kontextu v presne takom znení, v akom je uvedený v prednáške.
@@ -101,7 +104,7 @@ Odpoveď:
       if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
         const source = retrievedChunks[0].source;
         const slideNumber = retrievedChunks[0].slideNumber;
-        answer += `\n\n(Source: ${source} | Slide ${slideNumber})`;
+        answer += `\n\n(Zdroj: ${source} | Slide ${slideNumber})`;
       }
 
       return answer;

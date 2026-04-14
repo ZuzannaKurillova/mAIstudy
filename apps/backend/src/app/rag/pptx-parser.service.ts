@@ -60,8 +60,13 @@ export class PptxParserService {
       const slides = [];
 
       for (let i = 0; i < slideFiles.length; i++) {
-        const slidePath = path.join(slidesDir, slideFiles[i]);
+        const slideFile = slideFiles[i];
+        const slidePath = path.join(slidesDir, slideFile);
         const xmlContent = fs.readFileSync(slidePath, 'utf-8');
+
+        // Extract the actual slide number from the filename (e.g., slide10.xml -> 10)
+        const slideNumberMatch = slideFile.match(/slide(\d+)\.xml/);
+        const actualSlideNumber = slideNumberMatch ? parseInt(slideNumberMatch[1], 10) : i + 1;
 
         const textMatches = xmlContent.match(/<a:t>([^<]+)<\/a:t>/g) || [];
 
@@ -74,7 +79,7 @@ export class PptxParserService {
 
           slides.push({
             text: slideText,
-            slideNumber: i + 1,
+            slideNumber: actualSlideNumber,
           });
         }
       }
