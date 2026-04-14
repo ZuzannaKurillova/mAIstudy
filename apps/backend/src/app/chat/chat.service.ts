@@ -51,16 +51,8 @@ export class ChatService {
         .join('\n\n');
 
       // 3. STRICT extractive prompt
-      const prompt = `
-Si extrakčný systém pre študentov. Odpovedz na otázku presným textom z prednášok. Doslova copy paste, čo tam stojí.
-
-Tvoja úloha:
-IMPORTANT: NEVYTVÁRAJ nové vety. Použi výhradne text z kontextu v presne takom znení, v akom je uvedený v prednáške.
-
-Ak odpoveď nie je v kontexte, odpíš:
-"Na základe prednášok neviem odpovedať."
-
-Odpovedaj VÝHRADNE v slovenčine.
+      const prompt = `You are an extraction system for studens. Make a summary of all the chunks being sent to you. If there are no chunks, answer: "Na základe prednášok neviem odpovedať."
+      Always answer in English.
 
 --- KONTEXT ---
 ${context}
@@ -100,11 +92,12 @@ Odpoveď:
       this.logger.log('Response generated successfully');
       this.logger.log(`LLM Response: ${answer}`);
 
-      // 5. Append source information from the most relevant chunk
+      // 5. Append all chunks with their full content and sources
       if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
-        const source = retrievedChunks[0].source;
-        const slideNumber = retrievedChunks[0].slideNumber;
-        answer += `\n\n(Zdroj: ${source} | Slide ${slideNumber})`;
+        answer += '\n\n---\n**Zdroje:**\n';
+        retrievedChunks.forEach((chunk, idx) => {
+          answer += `\n**${idx + 1}. ${chunk.source} | Slide ${chunk.slideNumber}**\n${chunk.text}\n`;
+        });
       }
 
       return answer;
