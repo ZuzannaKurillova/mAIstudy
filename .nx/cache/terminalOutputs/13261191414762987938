@@ -1,3 +1,0 @@
-> webpack-cli build --node-env=production
-
-webpack compiled [1m[32msuccessfully[39m[22m (cdf09eb07b2de733)
