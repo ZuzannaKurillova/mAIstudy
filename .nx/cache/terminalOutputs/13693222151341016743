@@ -1,0 +1,97 @@
+> nx run backend:serve:development
+
+
+[2m> [22m[2mnx run[22m backend:build:development  [2m[local cache][22m
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (a2b8ffe659b1461b)
+
+[2m[32m————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+[2mNx read the output from the cache instead of running the command for 1 out of 1 tasks.[22m
+
+[1m[31mDebugger listening on ws://localhost:9229/45dc6040-c86c-4f33-880e-6512f1b6d058
+Debugger listening on ws://localhost:9229/45dc6040-c86c-4f33-880e-6512f1b6d058
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 57 documents[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:40 PM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[ChatController] [39m[32mReceived chat request: Tell me about Bratislava[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mProcessing question: Tell me about Bratislava[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieving context for query: Tell me about Bratislava[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mDetected place name keywords: Bratislava[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mFound 28 chunks containing: Bratislava[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieved 10 relevant chunks[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mFirst chunk preview: near and full of surprises slovakia slovakia slovakia -- 1 of 63 -- SK AT UA Bratislava Budapest čie...[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mRetrieved 10 context chunks from PDFs[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mFirst chunk preview: near and full of surprises slovakia slovakia slovakia -- 1 of 63 -- SK AT UA Bratislava Budapest čie...[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:02:51 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mGenerating response with Ollama...[39m
+[32m[Nest] 7842  - [39m04/13/2026, 4:03:32 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mResponse generated successfully[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (cffef71fe44604df)
+
+[2m[32m————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/778ec721-2778-4c95-95b2-76bbe715281e
+Debugger listening on ws://localhost:9229/778ec721-2778-4c95-95b2-76bbe715281e
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 57 documents[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 89272  - [39m04/13/2026, 4:05:22 PM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m

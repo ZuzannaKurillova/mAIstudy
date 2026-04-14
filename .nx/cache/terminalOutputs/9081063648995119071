@@ -1,0 +1,79 @@
+> nx run backend:serve:development
+
+
+[2m> [22m[2mnx run[22m backend:build:development  [2m[local cache][22m
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (0af44b2effd220bc)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+[2mNx read the output from the cache instead of running the command for 1 out of 1 tasks.[22m
+
+[1m[31mDebugger listening on ws://localhost:9229/0914c912-4fa8-49f4-8728-817cb8793e43
+Debugger listening on ws://localhost:9229/0914c912-4fa8-49f4-8728-817cb8793e43
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 57 documents[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:51:59 PM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:53:04 PM [32m    LOG[39m [38;5;3m[ChatController] [39m[32mReceived chat request: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:53:04 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mProcessing question: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:53:04 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieving context for query: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:53:04 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieved 5 relevant chunks[39m
+[32m[Nest] 88847  - [39m04/13/2026, 2:53:04 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mGenerating response with Gemini...[39m
+[1m[31m[31m[Nest] 88847  - [31m04/13/2026, 2:53:05 PM [31m  ERROR[31m [38;5;3m[ChatService] [31m[31mError in chat service:[31m
+[39m[22m
+[1m[31m[31m[Nest] 88847  - [31m04/13/2026, 2:53:05 PM [31m  ERROR[31m [38;5;3m[ChatService] [31mGoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [404 Not Found] models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:434:11[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at makeRequest [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:403:9[90m)[31m
+    at generateContent [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:867:22[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:43:22[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  status: [33m404[31m,
+  statusText: [32m'Not Found'[31m,
+  errorDetails: [90mundefined[31m
+}
+[39m[22m
+[1m[31m[31m[Nest] 88847  - [31m04/13/2026, 2:53:05 PM [31m  ERROR[31m [38;5;3m[ExceptionsHandler] [31mGoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [404 Not Found] models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:434:11[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at makeRequest [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:403:9[90m)[31m
+    at generateContent [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:867:22[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:43:22[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  status: [33m404[31m,
+  statusText: [32m'Not Found'[31m,
+  errorDetails: [90mundefined[31m
+}
+[39m[22m
+[1m[31mFailed to reconnect to daemon after multiple attempts[39m[22m

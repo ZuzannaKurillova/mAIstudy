@@ -1,0 +1,198 @@
+> nx run backend:serve:development
+
+
+[2m> [22m[2mnx run[22m backend:build:development  [2m[local cache][22m
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (43f55bf9dc044df7)
+
+[2m[32m————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+[2mNx read the output from the cache instead of running the command for 1 out of 1 tasks.[22m
+
+[1m[31mDebugger listening on ws://localhost:9229/91036b1a-a520-42c8-be1e-641345e49eb8
+Debugger listening on ws://localhost:9229/91036b1a-a520-42c8-be1e-641345e49eb8
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 57 documents[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:29 PM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:43 PM [32m    LOG[39m [38;5;3m[ChatController] [39m[32mReceived chat request: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:43 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mProcessing question: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:43 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieving context for query: What are the best places to visit in Slovakia?[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:43 PM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieved 5 relevant chunks[39m
+[32m[Nest] 2229  - [39m04/13/2026, 3:04:43 PM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mGenerating response with Gemini...[39m
+[1m[31m[31m[Nest] 2229  - [31m04/13/2026, 3:04:44 PM [31m  ERROR[31m [38;5;3m[ChatService] [31m[31mError in chat service:[31m
+[39m[22m
+[1m[31m[31m[Nest] 2229  - [31m04/13/2026, 3:04:44 PM [31m  ERROR[31m [38;5;3m[ChatService] [31mGoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 15.844063847s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"15s"}]
+    at handleResponseNotOk [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:434:11[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at makeRequest [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:403:9[90m)[31m
+    at generateContent [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:867:22[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:43:22[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  status: [33m429[31m,
+  statusText: [32m'Too Many Requests'[31m,
+  errorDetails: [
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.Help'[31m,
+      links: [
+        {
+          description: [32m'Learn more about Gemini API quotas'[31m,
+          url: [32m'https://ai.google.dev/gemini-api/docs/rate-limits'[31m
+        }
+      ]
+    },
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.QuotaFailure'[31m,
+      violations: [
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_requests'[31m,
+          quotaId: [32m'GenerateRequestsPerDayPerProjectPerModel-FreeTier'[31m,
+          quotaDimensions: {
+            model: [32m'gemini-2.0-flash'[31m,
+            location: [32m'global'[31m
+          }
+        },
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_requests'[31m,
+          quotaId: [32m'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'[31m,
+          quotaDimensions: {
+            model: [32m'gemini-2.0-flash'[31m,
+            location: [32m'global'[31m
+          }
+        },
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count'[31m,
+          quotaId: [32m'GenerateContentInputTokensPerModelPerMinute-FreeTier'[31m,
+          quotaDimensions: {
+            location: [32m'global'[31m,
+            model: [32m'gemini-2.0-flash'[31m
+          }
+        }
+      ]
+    },
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.RetryInfo'[31m,
+      retryDelay: [32m'15s'[31m
+    }
+  ]
+}
+[39m[22m
+[1m[31m[31m[Nest] 2229  - [31m04/13/2026, 3:04:44 PM [31m  ERROR[31m [38;5;3m[ExceptionsHandler] [31mGoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 15.844063847s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"15s"}]
+    at handleResponseNotOk [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:434:11[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at makeRequest [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:403:9[90m)[31m
+    at generateContent [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@google[24m/generative-ai/dist/index.js:867:22[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:43:22[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  status: [33m429[31m,
+  statusText: [32m'Too Many Requests'[31m,
+  errorDetails: [
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.Help'[31m,
+      links: [
+        {
+          description: [32m'Learn more about Gemini API quotas'[31m,
+          url: [32m'https://ai.google.dev/gemini-api/docs/rate-limits'[31m
+        }
+      ]
+    },
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.QuotaFailure'[31m,
+      violations: [
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_requests'[31m,
+          quotaId: [32m'GenerateRequestsPerDayPerProjectPerModel-FreeTier'[31m,
+          quotaDimensions: {
+            model: [32m'gemini-2.0-flash'[31m,
+            location: [32m'global'[31m
+          }
+        },
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_requests'[31m,
+          quotaId: [32m'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'[31m,
+          quotaDimensions: {
+            model: [32m'gemini-2.0-flash'[31m,
+            location: [32m'global'[31m
+          }
+        },
+        {
+          quotaMetric: [32m'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count'[31m,
+          quotaId: [32m'GenerateContentInputTokensPerModelPerMinute-FreeTier'[31m,
+          quotaDimensions: {
+            location: [32m'global'[31m,
+            model: [32m'gemini-2.0-flash'[31m
+          }
+        }
+      ]
+    },
+    {
+      [32m'@type'[31m: [32m'type.googleapis.com/google.rpc.RetryInfo'[31m,
+      retryDelay: [32m'15s'[31m
+    }
+  ]
+}
+[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+
+[2m[32m————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+/Users/zuzanakurillova/Desktop/mAItravel2/node_modules/@nx/js/src/executors/node/lib/coalescing-debounce.js:47
+                reject(new Error('Cancelled'));
+                       ^
+
+Error: Cancelled
+    at Object.cancel [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[39mnode_modules/[4m@nx[24m/js/src/executors/node/lib/coalescing-debounce.js:47:24[90m)[39m
+    at stopAllTasks [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[39mnode_modules/[4m@nx[24m/js/src/executors/node/node.impl.js:178:35[90m)[39m
+    at process.<anonymous> [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[39mnode_modules/[4m@nx[24m/js/src/executors/node/node.impl.js:191:19[90m)[39m
+[90m    at process.emit (node:events:524:28)[39m
+    at process.emit [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[39mnode_modules/[4mnx[24m/src/native/index.js:29:23[90m)[39m
+
+Node.js v22.12.0

@@ -1,0 +1,2403 @@
+> nx run backend:serve:development
+
+
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (81ef2e50fa8a3ec0)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/a0e0a776-8a76-4ebe-83ac-0792f4afd56e
+Debugger listening on ws://localhost:9229/a0e0a776-8a76-4ebe-83ac-0792f4afd56e
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 0 documents[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection is empty, starting ingestion...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mParsing PPTX presentations...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[PptxParserService] [39m[32mParsing PPTX: /Users/zuzanakurillova/Desktop/mAItravel2/VAII/1.pptx[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[PptxParserService] [39m[32mExtracted 8 chunks from VAII/1.pptx[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mParsed 8 chunks from PPTX files[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:13 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mGenerating embeddings...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:15 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mUpserting to ChromaDB...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:15 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mSuccessfully ingested 8 chunks[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:15 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:15:15 AM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[ChatController] [39m[32mReceived chat request: Aké sú výhody webových aplikácií?[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mProcessing question: Aké sú výhody webových aplikácií?[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieving context for query: Aké sú výhody webových aplikácií?[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mDetected place name keywords: Ak[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mFound 7 chunks containing: Ak[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mTop chunk has 9 keyword occurrences[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mRetrieved 8 relevant chunks[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mFirst chunk preview: príklad 46 Obrázky Podporované formáty: GIF, JPG, PNG, SVG, WebP Animované GIF obrázky Obrázky s pri...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mRetrieved 8 context chunks from PDFs[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mFirst chunk preview: príklad 46 Obrázky Podporované formáty: GIF, JPG, PNG, SVG, WebP Animované GIF obrázky Obrázky s pri...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:16:43 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mGenerating response with Ollama...[39m
+[32m[Nest] 52135  - [39m04/14/2026, 8:17:08 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mResponse generated successfully[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (376d31c0adb28d2c)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/a2959359-c27c-4c79-988d-16d3e168fc15
+Debugger listening on ws://localhost:9229/a2959359-c27c-4c79-988d-16d3e168fc15
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +15ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 8 documents[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 58302  - [39m04/14/2026, 8:26:18 AM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (405223dba539924d)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/caf5116e-04e8-48c2-9601-e5c8db3a9098
+Debugger listening on ws://localhost:9229/caf5116e-04e8-48c2-9601-e5c8db3a9098
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +9ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 8 documents[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection already populated, skipping ingestion[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 79928  - [39m04/14/2026, 8:26:36 AM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (b129d93175ff1279)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/633e41c8-a2f4-4039-bed6-429fdb4a01b8
+Debugger listening on ws://localhost:9229/633e41c8-a2f4-4039-bed6-429fdb4a01b8
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +9ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 8 documents[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 96821  - [39m04/14/2026, 8:26:50 AM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m backend:build:development
+
+> webpack-cli build --node-env=development
+
+webpack compiled [1m[32msuccessfully[39m[22m (a6144567c1d70a27)
+
+[2m[32m—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for project backend[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/9d857d70-b123-40be-9afa-65ac7284cb3f
+Debugger listening on ws://localhost:9229/9d857d70-b123-40be-9afa-65ac7284cb3f
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +7ms[39m
+[1m[31mThe 'path' argument is deprecated. Please use 'ssl', 'host', and 'port' instead
+[39m[22m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +6ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mChatModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mChatController {/api/chat}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mInitializing ChromaDB collection...[39m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[1m[31mCannot instantiate a collection with the DefaultEmbeddingFunction. Please install @chroma-core/default-embed, or provide a different embedding function
+[39m[22m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mCollection has 8 documents[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:21 AM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:46 AM [32m    LOG[39m [38;5;3m[ChatController] [39m[32mReceived chat request: Aké sú výhody webových aplikácií?[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:46 AM [32m    LOG[39m [38;5;3m[ChatService] [39m[32mProcessing question: Aké sú výhody webových aplikácií?[39m
+[32m[Nest] 35220  - [39m04/14/2026, 8:27:46 AM [32m    LOG[39m [38;5;3m[RagService] [39m[32mQuery: Aké sú výhody webových aplikácií?[39m
+[1m[31m[31m[Nest] 35220  - [31m04/14/2026, 8:27:46 AM [31m  ERROR[31m [38;5;3m[ChatService] [31m[31mError in chat service:[31m
+[39m[22m
+[1m[31m[31m[Nest] 35220  - [31m04/14/2026, 8:27:46 AM [31m  ERROR[31m [38;5;3m[ChatService] [31mAxiosError: Request failed with status code 404
+    at settle [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/core/settle.js:20:7[90m)[31m
+    at IncomingMessage.handleStreamEnd [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/adapters/http.js:849:13[90m)[31m
+[90m    at IncomingMessage.emit (node:events:536:35)[31m
+[90m    at endReadableNT (node:internal/streams/readable:1698:12)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:90:21)[31m
+    at Axios.request [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/core/Axios.js:46:41[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at EmbeddingService.embedText [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/rag/embedding.service.ts:10:22[90m)[31m
+    at RagService.retrieve [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/rag/rag.service.ts:74:28[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:23:31[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  isAxiosError: [33mtrue[31m,
+  code: [32m'ERR_BAD_REQUEST'[31m,
+  config: {
+    transitional: {
+      silentJSONParsing: [33mtrue[31m,
+      forcedJSONParsing: [33mtrue[31m,
+      clarifyTimeoutError: [33mfalse[31m,
+      legacyInterceptorReqResOrdering: [33mtrue[31m
+    },
+    adapter: [
+      [32m'xhr'[31m,
+      [32m'http'[31m,
+      [32m'fetch'[31m
+    ],
+    transformRequest: [
+      [36m[Function: transformRequest][31m
+    ],
+    transformResponse: [
+      [36m[Function: transformResponse][31m
+    ],
+    timeout: [33m0[31m,
+    xsrfCookieName: [32m'XSRF-TOKEN'[31m,
+    xsrfHeaderName: [32m'X-XSRF-TOKEN'[31m,
+    maxContentLength: [33m-1[31m,
+    maxBodyLength: [33m-1[31m,
+    env: {
+      FormData: [Function: FormData] {
+        LINE_BREAK: [32m'\r\n'[31m,
+        DEFAULT_CONTENT_TYPE: [32m'application/octet-stream'[31m
+      },
+      Blob: [36m[class Blob][31m
+    },
+    validateStatus: [36m[Function: validateStatus][31m,
+    headers: Object [AxiosHeaders] {
+      Accept: [32m'application/json, text/plain, */*'[31m,
+      [32m'Content-Type'[31m: [32m'application/json'[31m,
+      [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+      [32m'Content-Length'[31m: [32m'69'[31m,
+      [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+    },
+    method: [32m'post'[31m,
+    url: [32m'http://localhost:11434/api/embeddings'[31m,
+    data: [32m'{"model":"bge-m3","prompt":"Aké sú výhody webových aplikácií?"}'[31m,
+    allowAbsoluteUrls: [33mtrue[31m
+  },
+  request: [36m<ref *2>[31m ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [36m[Function (anonymous)][31m,
+      aborted: [36m[Function (anonymous)][31m,
+      connect: [36m[Function (anonymous)][31m,
+      error: [36m[Function (anonymous)][31m,
+      socket: [36m[Function (anonymous)][31m,
+      timeout: [36m[Function (anonymous)][31m,
+      finish: [36m[Function: requestOnFinish][31m
+    },
+    _eventsCount: [33m7[31m,
+    _maxListeners: [90mundefined[31m,
+    outputData: [],
+    outputSize: [33m0[31m,
+    writable: [33mtrue[31m,
+    destroyed: [33mtrue[31m,
+    _last: [33mfalse[31m,
+    chunkedEncoding: [33mfalse[31m,
+    shouldKeepAlive: [33mtrue[31m,
+    maxRequestsOnConnectionReached: [33mfalse[31m,
+    _defaultKeepAlive: [33mtrue[31m,
+    useChunkedEncodingByDefault: [33mtrue[31m,
+    sendDate: [33mfalse[31m,
+    _removedConnection: [33mfalse[31m,
+    _removedContLen: [33mfalse[31m,
+    _removedTE: [33mfalse[31m,
+    strictContentLength: [33mfalse[31m,
+    _contentLength: [32m'69'[31m,
+    _hasBody: [33mtrue[31m,
+    _trailer: [32m''[31m,
+    finished: [33mtrue[31m,
+    _headerSent: [33mtrue[31m,
+    _closed: [33mtrue[31m,
+    _header: [32m'POST /api/embeddings HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/1.15.0\r\nContent-Length: 69\r\nAccept-Encoding: gzip, compress, deflate, br\r\nHost: localhost:11434\r\nConnection: keep-alive\r\n\r\n'[31m,
+    _keepAliveTimeout: [33m0[31m,
+    _onPendingData: [36m[Function: nop][31m,
+    agent: Agent {
+      _events: [Object: null prototype] {
+        free: [36m[Function (anonymous)][31m,
+        newListener: [36m[Function: maybeEnableKeylog][31m
+      },
+      _eventsCount: [33m2[31m,
+      _maxListeners: [90mundefined[31m,
+      defaultPort: [33m80[31m,
+      protocol: [32m'http:'[31m,
+      options: [Object: null prototype] {
+        keepAlive: [33mtrue[31m,
+        scheduling: [32m'lifo'[31m,
+        timeout: [33m5000[31m,
+        noDelay: [33mtrue[31m,
+        path: [1mnull[22m[1m
+      },
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype] {
+        [32m'localhost:11434:'[31m: [
+          Socket {
+            connecting: [33mfalse[31m,
+            _hadError: [33mfalse[31m,
+            _parent: [1mnull[22m[1m,
+            _host: [32m'localhost'[31m,
+            _closeAfterHandlingError: [33mfalse[31m,
+            _events: [36m[Object][31m,
+            _readableState: [36m[ReadableState][31m,
+            _writableState: [36m[WritableState][31m,
+            allowHalfOpen: [33mfalse[31m,
+            _maxListeners: [90mundefined[31m,
+            _eventsCount: [33m6[31m,
+            _sockname: [1mnull[22m[1m,
+            _pendingData: [1mnull[22m[1m,
+            _pendingEncoding: [32m''[31m,
+            server: [1mnull[22m[1m,
+            _server: [1mnull[22m[1m,
+            timeout: [33m5000[31m,
+            parser: [1mnull[22m[1m,
+            _httpMessage: [1mnull[22m[1m,
+            autoSelectFamilyAttemptedAddresses: [36m[Array][31m,
+            [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+            [[32mSymbol(kHandle)[31m]: [36m[TCP][31m,
+            [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+            [[32mSymbol(timeout)[31m]: Timeout {
+              _idleTimeout: [33m5000[31m,
+              _idlePrev: [36m[TimersList][31m,
+              _idleNext: [36m[TimersList][31m,
+              _idleStart: [33m25302[31m,
+              _onTimeout: [36m[Function: bound ][31m,
+              _timerArgs: [90mundefined[31m,
+              _repeat: [1mnull[22m[1m,
+              _destroyed: [33mfalse[31m,
+              [[32mSymbol(refed)[31m]: [33mfalse[31m,
+              [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+              [[32mSymbol(asyncId)[31m]: [33m123[31m,
+              [[32mSymbol(triggerId)[31m]: [33m121[31m,
+              [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+            },
+            [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+            [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+            [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+            [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+            [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+            [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+            [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+          }
+        ]
+      },
+      keepAliveMsecs: [33m1000[31m,
+      keepAlive: [33mtrue[31m,
+      maxSockets: [33mInfinity[31m,
+      maxFreeSockets: [33m256[31m,
+      scheduli[39m[22m
+[1m[31mng: [32m'lifo'[31m,
+      maxTotalSockets: [33mInfinity[31m,
+      totalSocketCount: [33m1[31m,
+      [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+    },
+    socketPath: [90mundefined[31m,
+    method: [32m'POST'[31m,
+    maxHeaderSize: [90mundefined[31m,
+    insecureHTTPParser: [90mundefined[31m,
+    joinDuplicateHeaders: [90mundefined[31m,
+    path: [32m'/api/embeddings'[31m,
+    _ended: [33mtrue[31m,
+    res: IncomingMessage {
+      _events: {
+        close: [90mundefined[31m,
+        error: [36m[Function: handleStreamError][31m,
+        data: [36m[Function: handleStreamData][31m,
+        end: [
+          [36m[Function: responseOnEnd][31m,
+          [36m[Function: handleStreamEnd][31m
+        ],
+        readable: [90mundefined[31m,
+        aborted: [36m[Function: handlerStreamAborted][31m
+      },
+      _readableState: ReadableState {
+        highWaterMark: [33m65536[31m,
+        buffer: [],
+        bufferIndex: [33m0[31m,
+        length: [33m0[31m,
+        pipes: [],
+        awaitDrainWriters: [1mnull[22m[1m,
+        [[32mSymbol(kState)[31m]: [33m194779004[31m
+      },
+      _maxListeners: [90mundefined[31m,
+      socket: [1mnull[22m[1m,
+      httpVersionMajor: [33m1[31m,
+      httpVersionMinor: [33m1[31m,
+      httpVersion: [32m'1.1'[31m,
+      complete: [33mtrue[31m,
+      rawHeaders: [
+        [32m'Content-Type'[31m,
+        [32m'application/json; charset=utf-8'[31m,
+        [32m'Date'[31m,
+        [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+        [32m'Content-Length'[31m,
+        [32m'60'[31m
+      ],
+      rawTrailers: [],
+      joinDuplicateHeaders: [90mundefined[31m,
+      aborted: [33mfalse[31m,
+      upgrade: [33mfalse[31m,
+      url: [32m''[31m,
+      method: [1mnull[22m[1m,
+      statusCode: [33m404[31m,
+      statusMessage: [32m'Not Found'[31m,
+      client: [36m<ref *1>[31m Socket {
+        connecting: [33mfalse[31m,
+        _hadError: [33mfalse[31m,
+        _parent: [1mnull[22m[1m,
+        _host: [32m'localhost'[31m,
+        _closeAfterHandlingError: [33mfalse[31m,
+        _events: {
+          close: [36m[Function: onClose][31m,
+          error: [Function: bound onceWrapper] {
+            listener: [36m[Function: freeSocketErrorListener][31m
+          },
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          data: [90mundefined[31m,
+          end: [36m[Function: onReadableStreamEnd][31m,
+          readable: [90mundefined[31m,
+          connect: [90mundefined[31m,
+          free: [36m[Function: onFree][31m,
+          timeout: [
+            [36m[Function: onTimeout][31m,
+            [36m[Function (anonymous)][31m
+          ],
+          agentRemove: [36m[Function: onRemove][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m60303620[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17563908[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+        },
+        allowHalfOpen: [33mfalse[31m,
+        _maxListeners: [90mundefined[31m,
+        _eventsCount: [33m6[31m,
+        _sockname: [1mnull[22m[1m,
+        _pendingData: [1mnull[22m[1m,
+        _pendingEncoding: [32m''[31m,
+        server: [1mnull[22m[1m,
+        _server: [1mnull[22m[1m,
+        timeout: [33m5000[31m,
+        parser: [1mnull[22m[1m,
+        _httpMessage: [1mnull[22m[1m,
+        autoSelectFamilyAttemptedAddresses: [
+          [32m'::1:11434'[31m,
+          [32m'127.0.0.1:11434'[31m
+        ],
+        [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+        [[32mSymbol(kHandle)[31m]: TCP {
+          reading: [33mtrue[31m,
+          onconnection: [1mnull[22m[1m,
+          [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+        },
+        [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+        [[32mSymbol(timeout)[31m]: Timeout {
+          _idleTimeout: [33m5000[31m,
+          _idlePrev: [36m[TimersList][31m,
+          _idleNext: [36m[TimersList][31m,
+          _idleStart: [33m25302[31m,
+          _onTimeout: [36m[Function: bound ][31m,
+          _timerArgs: [90mundefined[31m,
+          _repeat: [1mnull[22m[1m,
+          _destroyed: [33mfalse[31m,
+          [[32mSymbol(refed)[31m]: [33mfalse[31m,
+          [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+          [[32mSymbol(asyncId)[31m]: [33m123[31m,
+          [[32mSymbol(triggerId)[31m]: [33m121[31m,
+          [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+        },
+        [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+        [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+        [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+      },
+      _consuming: [33mfalse[31m,
+      _dumped: [33mfalse[31m,
+      req: [36m[Circular *2][31m,
+      _eventsCount: [33m4[31m,
+      responseUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+      redirects: [],
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kHeaders)[31m]: {
+        [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+        date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+        [32m'content-length'[31m: [32m'60'[31m
+      },
+      [[32mSymbol(kHeadersCount)[31m]: [33m6[31m,
+      [[32mSymbol(kTrailers)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kTrailersCount)[31m]: [33m0[31m
+    },
+    aborted: [33mfalse[31m,
+    timeoutCb: [1mnull[22m[1m,
+    upgradeOrConnect: [33mfalse[31m,
+    parser: [1mnull[22m[1m,
+    maxHeadersCount: [1mnull[22m[1m,
+    reusedSocket: [33mfalse[31m,
+    host: [32m'localhost'[31m,
+    protocol: [32m'http:'[31m,
+    _redirectable: Writable {
+      _events: {
+        close: [90mundefined[31m,
+        error: [36m[Function: handleRequestError][31m,
+        prefinish: [90mundefined[31m,
+        finish: [90mundefined[31m,
+        drain: [90mundefined[31m,
+        response: [36m[Function: handleResponse][31m,
+        socket: [
+          [36m[Function: handleRequestSocket][31m,
+          [36m[Function: destroyOnTimeout][31m
+        ],
+        abort: [90mundefined[31m
+      },
+      _writableState: WritableState {
+        highWaterMark: [33m65536[31m,
+        length: [33m0[31m,
+        corked: [33m0[31m,
+        onwrite: [36m[Function: bound onwrite][31m,
+        writelen: [33m0[31m,
+        bufferedIndex: [33m0[31m,
+        pendingcb: [33m0[31m,
+        [[32mSymbol(kState)[31m]: [33m17580812[31m,
+        [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m
+      },
+      _maxListeners: [90mundefined[31m,
+      _options: {
+        maxRedirects: [33m21[31m,
+        maxBodyLength: [33mInfinity[31m,
+        protocol: [32m'http:'[31m,
+        path: [32m'/api/embeddings'[31m,
+        method: [32m'POST'[31m,
+        headers: [Object: null prototype] {
+          Accept: [32m'application/json, text/plain, */*'[31m,
+          [32m'Content-Type'[31m: [32m'application/json'[31m,
+          [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+          [32m'Content-Length[39m[22m
+[1m[31m'[39m: [32m'69'[31m,
+          [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+        },
+        agents: {
+          http: [90mundefined[31m,
+          https: [90mundefined[31m
+        },
+        auth: [90mundefined[31m,
+        family: [90mundefined[31m,
+        beforeRedirect: [36m[Function: dispatchBeforeRedirect][31m,
+        beforeRedirects: {
+          proxy: [36m[Function: beforeRedirect][31m
+        },
+        http2Options: [90mundefined[31m,
+        hostname: [32m'localhost'[31m,
+        port: [32m'11434'[31m,
+        agent: [90mundefined[31m,
+        nativeProtocols: {
+          [32m'http:'[31m: {
+            _connectionListener: [36m[Function: connectionListener][31m,
+            METHODS: [36m[Array][31m,
+            STATUS_CODES: [36m[Object][31m,
+            Agent: [36m[Function][31m,
+            ClientRequest: [36m[Function: ClientRequest][31m,
+            IncomingMessage: [36m[Function: IncomingMessage][31m,
+            OutgoingMessage: [36m[Function: OutgoingMessage][31m,
+            Server: [36m[Function: Server][31m,
+            ServerResponse: [36m[Function: ServerResponse][31m,
+            createServer: [36m[Function: createServer][31m,
+            validateHeaderName: [36m[Function][31m,
+            validateHeaderValue: [36m[Function][31m,
+            get: [36m[Function: get][31m,
+            request: [36m[Function: request][31m,
+            setMaxIdleHTTPParsers: [36m[Function: setMaxIdleHTTPParsers][31m,
+            maxHeaderSize: [36m[Getter][31m,
+            globalAgent: [36m[Getter/Setter][31m,
+            WebSocket: [36m[Getter][31m,
+            CloseEvent: [36m[Getter][31m,
+            MessageEvent: [36m[Getter][31m
+          },
+          [32m'https:'[31m: {
+            Agent: [36m[Function: Agent][31m,
+            globalAgent: [36m[Agent][31m,
+            Server: [36m[Function: Server][31m,
+            createServer: [36m[Function: createServer][31m,
+            get: [36m[Function: get][31m,
+            request: [36m[Function: request][31m
+          }
+        },
+        sensitiveHeaders: [],
+        pathname: [32m'/api/embeddings'[31m
+      },
+      _ended: [33mtrue[31m,
+      _ending: [33mtrue[31m,
+      _redirectCount: [33m0[31m,
+      _redirects: [],
+      _requestBodyLength: [33m69[31m,
+      _requestBodyBuffers: [],
+      _eventsCount: [33m3[31m,
+      _onNativeResponse: [36m[Function (anonymous)][31m,
+      _headerFilter: [31m/^(?:Authorization|Proxy-Authorization|Cookie)$/i[31m,
+      _currentRequest: [36m[Circular *2][31m,
+      _currentUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+      _timeout: [1mnull[22m[1m,
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+    },
+    [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+    [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+    [[32mSymbol(kBytesWritten)[31m]: [33m0[31m,
+    [[32mSymbol(kNeedDrain)[31m]: [33mfalse[31m,
+    [[32mSymbol(corked)[31m]: [33m0[31m,
+    [[32mSymbol(kChunkedBuffer)[31m]: [],
+    [[32mSymbol(kChunkedLength)[31m]: [33m0[31m,
+    [[32mSymbol(kSocket)[31m]: [36m<ref *1>[31m Socket {
+      connecting: [33mfalse[31m,
+      _hadError: [33mfalse[31m,
+      _parent: [1mnull[22m[1m,
+      _host: [32m'localhost'[31m,
+      _closeAfterHandlingError: [33mfalse[31m,
+      _events: {
+        close: [36m[Function: onClose][31m,
+        error: [Function: bound onceWrapper] {
+          listener: [36m[Function: freeSocketErrorListener][31m
+        },
+        prefinish: [90mundefined[31m,
+        finish: [90mundefined[31m,
+        drain: [90mundefined[31m,
+        data: [90mundefined[31m,
+        end: [36m[Function: onReadableStreamEnd][31m,
+        readable: [90mundefined[31m,
+        connect: [90mundefined[31m,
+        free: [36m[Function: onFree][31m,
+        timeout: [
+          [36m[Function: onTimeout][31m,
+          [36m[Function (anonymous)][31m
+        ],
+        agentRemove: [36m[Function: onRemove][31m
+      },
+      _readableState: ReadableState {
+        highWaterMark: [33m65536[31m,
+        buffer: [],
+        bufferIndex: [33m0[31m,
+        length: [33m0[31m,
+        pipes: [],
+        awaitDrainWriters: [1mnull[22m[1m,
+        [[32mSymbol(kState)[31m]: [33m60303620[31m
+      },
+      _writableState: WritableState {
+        highWaterMark: [33m65536[31m,
+        length: [33m0[31m,
+        corked: [33m0[31m,
+        onwrite: [36m[Function: bound onwrite][31m,
+        writelen: [33m0[31m,
+        bufferedIndex: [33m0[31m,
+        pendingcb: [33m0[31m,
+        [[32mSymbol(kState)[31m]: [33m17563908[31m,
+        [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+      },
+      allowHalfOpen: [33mfalse[31m,
+      _maxListeners: [90mundefined[31m,
+      _eventsCount: [33m6[31m,
+      _sockname: [1mnull[22m[1m,
+      _pendingData: [1mnull[22m[1m,
+      _pendingEncoding: [32m''[31m,
+      server: [1mnull[22m[1m,
+      _server: [1mnull[22m[1m,
+      timeout: [33m5000[31m,
+      parser: [1mnull[22m[1m,
+      _httpMessage: [1mnull[22m[1m,
+      autoSelectFamilyAttemptedAddresses: [
+        [32m'::1:11434'[31m,
+        [32m'127.0.0.1:11434'[31m
+      ],
+      [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+      [[32mSymbol(kHandle)[31m]: TCP {
+        reading: [33mtrue[31m,
+        onconnection: [1mnull[22m[1m,
+        [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+      },
+      [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+      [[32mSymbol(timeout)[31m]: Timeout {
+        _idleTimeout: [33m5000[31m,
+        _idlePrev: [36m[TimersList][31m,
+        _idleNext: [36m[TimersList][31m,
+        _idleStart: [33m25302[31m,
+        _onTimeout: [36m[Function: bound ][31m,
+        _timerArgs: [90mundefined[31m,
+        _repeat: [1mnull[22m[1m,
+        _destroyed: [33mfalse[31m,
+        [[32mSymbol(refed)[31m]: [33mfalse[31m,
+        [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+        [[32mSymbol(asyncId)[31m]: [33m123[31m,
+        [[32mSymbol(triggerId)[31m]: [33m121[31m,
+        [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+      },
+      [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+      [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+      [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+      [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+      [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+    },
+    [[32mSymbol(kOutHeaders)[31m]: [Object: null prototype] {
+      accept: [
+        [32m'Accept'[31m,
+        [32m'application/json, text/plain, */*'[31m
+      ],
+      [32m'content-type'[31m: [
+        [32m'Content-Type'[31m,
+        [32m'application/json'[31m
+      ],
+      [32m'user-agent'[31m: [
+        [32m'User-Agent'[31m,
+        [32m'axios/1.15.0'[31m
+      ],
+      [32m'content-length'[31m: [
+        [32m'Content-Length'[31m,
+        [32m'69'[31m
+      ],
+      [32m'accept-encoding'[31m: [
+        [32m'Accept-Encoding'[31m,
+        [32m'gzip, compress, deflate, br'[31m
+      ],
+      host: [
+        [32m'Host'[31m,
+        [32m'localhost:11434'[31m
+      ]
+    },
+    [[32mSymbol(errored)[31m]: [1mnull[22m[1m,
+    [[32mSymbol(kHighWaterMark)[31m]: [33m65536[31m,
+    [[32mSymbol(kRejectNonStandardBodyWrites)[31m]: [33mfalse[31m,
+    [[32mSymbol(kUniqueHeaders)[31m]: [1mnull[22m[1m
+  },
+  response: {
+    status: [33m404[31m,
+    statusText: [32m'Not Found'[31m,
+    headers: Object [AxiosHeaders] {
+      [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+      date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+      [32m'content-length'[31m: [32m'60'[31m
+    },
+    config: {
+      transitional: {
+        silentJSONPa[39m[22m
+[1m[31mrsing: [33mtrue[31m,
+        forcedJSONParsing: [33mtrue[31m,
+        clarifyTimeoutError: [33mfalse[31m,
+        legacyInterceptorReqResOrdering: [33mtrue[31m
+      },
+      adapter: [
+        [32m'xhr'[31m,
+        [32m'http'[31m,
+        [32m'fetch'[31m
+      ],
+      transformRequest: [
+        [36m[Function: transformRequest][31m
+      ],
+      transformResponse: [
+        [36m[Function: transformResponse][31m
+      ],
+      timeout: [33m0[31m,
+      xsrfCookieName: [32m'XSRF-TOKEN'[31m,
+      xsrfHeaderName: [32m'X-XSRF-TOKEN'[31m,
+      maxContentLength: [33m-1[31m,
+      maxBodyLength: [33m-1[31m,
+      env: {
+        FormData: [Function: FormData] {
+          LINE_BREAK: [32m'\r\n'[31m,
+          DEFAULT_CONTENT_TYPE: [32m'application/octet-stream'[31m
+        },
+        Blob: [36m[class Blob][31m
+      },
+      validateStatus: [36m[Function: validateStatus][31m,
+      headers: Object [AxiosHeaders] {
+        Accept: [32m'application/json, text/plain, */*'[31m,
+        [32m'Content-Type'[31m: [32m'application/json'[31m,
+        [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+        [32m'Content-Length'[31m: [32m'69'[31m,
+        [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+      },
+      method: [32m'post'[31m,
+      url: [32m'http://localhost:11434/api/embeddings'[31m,
+      data: [32m'{"model":"bge-m3","prompt":"Aké sú výhody webových aplikácií?"}'[31m,
+      allowAbsoluteUrls: [33mtrue[31m
+    },
+    request: [36m<ref *2>[31m ClientRequest {
+      _events: [Object: null prototype] {
+        abort: [36m[Function (anonymous)][31m,
+        aborted: [36m[Function (anonymous)][31m,
+        connect: [36m[Function (anonymous)][31m,
+        error: [36m[Function (anonymous)][31m,
+        socket: [36m[Function (anonymous)][31m,
+        timeout: [36m[Function (anonymous)][31m,
+        finish: [36m[Function: requestOnFinish][31m
+      },
+      _eventsCount: [33m7[31m,
+      _maxListeners: [90mundefined[31m,
+      outputData: [],
+      outputSize: [33m0[31m,
+      writable: [33mtrue[31m,
+      destroyed: [33mtrue[31m,
+      _last: [33mfalse[31m,
+      chunkedEncoding: [33mfalse[31m,
+      shouldKeepAlive: [33mtrue[31m,
+      maxRequestsOnConnectionReached: [33mfalse[31m,
+      _defaultKeepAlive: [33mtrue[31m,
+      useChunkedEncodingByDefault: [33mtrue[31m,
+      sendDate: [33mfalse[31m,
+      _removedConnection: [33mfalse[31m,
+      _removedContLen: [33mfalse[31m,
+      _removedTE: [33mfalse[31m,
+      strictContentLength: [33mfalse[31m,
+      _contentLength: [32m'69'[31m,
+      _hasBody: [33mtrue[31m,
+      _trailer: [32m''[31m,
+      finished: [33mtrue[31m,
+      _headerSent: [33mtrue[31m,
+      _closed: [33mtrue[31m,
+      _header: [32m'POST /api/embeddings HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/1.15.0\r\nContent-Length: 69\r\nAccept-Encoding: gzip, compress, deflate, br\r\nHost: localhost:11434\r\nConnection: keep-alive\r\n\r\n'[31m,
+      _keepAliveTimeout: [33m0[31m,
+      _onPendingData: [36m[Function: nop][31m,
+      agent: Agent {
+        _events: [Object: null prototype] {
+          free: [36m[Function (anonymous)][31m,
+          newListener: [36m[Function: maybeEnableKeylog][31m
+        },
+        _eventsCount: [33m2[31m,
+        _maxListeners: [90mundefined[31m,
+        defaultPort: [33m80[31m,
+        protocol: [32m'http:'[31m,
+        options: [Object: null prototype] {
+          keepAlive: [33mtrue[31m,
+          scheduling: [32m'lifo'[31m,
+          timeout: [33m5000[31m,
+          noDelay: [33mtrue[31m,
+          path: [1mnull[22m[1m
+        },
+        requests: [Object: null prototype] {},
+        sockets: [Object: null prototype] {},
+        freeSockets: [Object: null prototype] {
+          [32m'localhost:11434:'[31m: [
+            [36m[Socket][31m
+          ]
+        },
+        keepAliveMsecs: [33m1000[31m,
+        keepAlive: [33mtrue[31m,
+        maxSockets: [33mInfinity[31m,
+        maxFreeSockets: [33m256[31m,
+        scheduling: [32m'lifo'[31m,
+        maxTotalSockets: [33mInfinity[31m,
+        totalSocketCount: [33m1[31m,
+        [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+      },
+      socketPath: [90mundefined[31m,
+      method: [32m'POST'[31m,
+      maxHeaderSize: [90mundefined[31m,
+      insecureHTTPParser: [90mundefined[31m,
+      joinDuplicateHeaders: [90mundefined[31m,
+      path: [32m'/api/embeddings'[31m,
+      _ended: [33mtrue[31m,
+      res: IncomingMessage {
+        _events: {
+          close: [90mundefined[31m,
+          error: [36m[Function: handleStreamError][31m,
+          data: [36m[Function: handleStreamData][31m,
+          end: [
+            [36m[Function: responseOnEnd][31m,
+            [36m[Function: handleStreamEnd][31m
+          ],
+          readable: [90mundefined[31m,
+          aborted: [36m[Function: handlerStreamAborted][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m194779004[31m
+        },
+        _maxListeners: [90mundefined[31m,
+        socket: [1mnull[22m[1m,
+        httpVersionMajor: [33m1[31m,
+        httpVersionMinor: [33m1[31m,
+        httpVersion: [32m'1.1'[31m,
+        complete: [33mtrue[31m,
+        rawHeaders: [
+          [32m'Content-Type'[31m,
+          [32m'application/json; charset=utf-8'[31m,
+          [32m'Date'[31m,
+          [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+          [32m'Content-Length'[31m,
+          [32m'60'[31m
+        ],
+        rawTrailers: [],
+        joinDuplicateHeaders: [90mundefined[31m,
+        aborted: [33mfalse[31m,
+        upgrade: [33mfalse[31m,
+        url: [32m''[31m,
+        method: [1mnull[22m[1m,
+        statusCode: [33m404[31m,
+        statusMessage: [32m'Not Found'[31m,
+        client: [36m<ref *1>[31m Socket {
+          connecting: [33mfalse[31m,
+          _hadError: [33mfalse[31m,
+          _parent: [1mnull[22m[1m,
+          _host: [32m'localhost'[31m,
+          _closeAfterHandlingError: [33mfalse[31m,
+          _events: {
+            close: [36m[Function: onClose][31m,
+            error: [36m[Function][31m,
+            prefinish: [90mundefined[31m,
+            finish: [90mundefined[31m,
+            drain: [90mundefined[31m,
+            data: [90mundefined[31m,
+            end: [36m[Function: onReadableStreamEnd][31m,
+            readable: [90mundefined[31m,
+            connect: [90mundefined[31m,
+            free: [36m[Function: onFree][31m,
+            timeout: [36m[Array][31m,
+            agentRemove: [36m[Function: onRemove][31m
+          },
+          _readableState: ReadableState {
+            highWaterMark: [33m65536[31m,
+            buffer: [],
+            bufferIndex: [33m0[31m,
+            length: [33m0[31m,
+            pipes: [],
+            awaitDrainWriters: [1mnull[22m[1m,
+            [[32mSymbol(kState)[31m]: [33m60303620[31m
+          },
+          _writableState: WritableState {
+            highWaterMark: [33m65536[31m,
+            length: [33m0[31m,
+            corked: [33m0[31m,
+            onwrite: [36m[Function: bound onwrite][31m,
+            writelen: [33m0[31m,
+            bufferedIndex: [33m0[31m,
+            pendingcb: [33m0[31m,
+            [[32mSymbol(kState)[31m]: [33m17563908[31m,
+            [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+          },
+          allowHalfOpen: [33mfalse[31m,
+          _maxListeners: [90mundefined[31m,
+          _eventsCount: [33m6[31m,
+          _sockname: [1mnull[22m[1m,
+          _pendingData: [1mnull[22m[1m,
+          _pendingEncoding: [32m''[31m,
+          server: [1mnull[22m[1m,
+          _server: [1mnull[22m[1m,
+          tim[39m[22m
+[1m[31meout: [33m5000[31m,
+          parser: [1mnull[22m[1m,
+          _httpMessage: [1mnull[22m[1m,
+          autoSelectFamilyAttemptedAddresses: [
+            [32m'::1:11434'[31m,
+            [32m'127.0.0.1:11434'[31m
+          ],
+          [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+          [[32mSymbol(kHandle)[31m]: TCP {
+            reading: [33mtrue[31m,
+            onconnection: [1mnull[22m[1m,
+            [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+          },
+          [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+          [[32mSymbol(timeout)[31m]: Timeout {
+            _idleTimeout: [33m5000[31m,
+            _idlePrev: [36m[TimersList][31m,
+            _idleNext: [36m[TimersList][31m,
+            _idleStart: [33m25302[31m,
+            _onTimeout: [36m[Function: bound ][31m,
+            _timerArgs: [90mundefined[31m,
+            _repeat: [1mnull[22m[1m,
+            _destroyed: [33mfalse[31m,
+            [[32mSymbol(refed)[31m]: [33mfalse[31m,
+            [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+            [[32mSymbol(asyncId)[31m]: [33m123[31m,
+            [[32mSymbol(triggerId)[31m]: [33m121[31m,
+            [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+          },
+          [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+          [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+          [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+          [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+          [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+          [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+          [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+        },
+        _consuming: [33mfalse[31m,
+        _dumped: [33mfalse[31m,
+        req: [36m[Circular *2][31m,
+        _eventsCount: [33m4[31m,
+        responseUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+        redirects: [],
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kHeaders)[31m]: {
+          [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+          date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+          [32m'content-length'[31m: [32m'60'[31m
+        },
+        [[32mSymbol(kHeadersCount)[31m]: [33m6[31m,
+        [[32mSymbol(kTrailers)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kTrailersCount)[31m]: [33m0[31m
+      },
+      aborted: [33mfalse[31m,
+      timeoutCb: [1mnull[22m[1m,
+      upgradeOrConnect: [33mfalse[31m,
+      parser: [1mnull[22m[1m,
+      maxHeadersCount: [1mnull[22m[1m,
+      reusedSocket: [33mfalse[31m,
+      host: [32m'localhost'[31m,
+      protocol: [32m'http:'[31m,
+      _redirectable: Writable {
+        _events: {
+          close: [90mundefined[31m,
+          error: [36m[Function: handleRequestError][31m,
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          response: [36m[Function: handleResponse][31m,
+          socket: [
+            [36m[Function: handleRequestSocket][31m,
+            [36m[Function: destroyOnTimeout][31m
+          ],
+          abort: [90mundefined[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17580812[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m
+        },
+        _maxListeners: [90mundefined[31m,
+        _options: {
+          maxRedirects: [33m21[31m,
+          maxBodyLength: [33mInfinity[31m,
+          protocol: [32m'http:'[31m,
+          path: [32m'/api/embeddings'[31m,
+          method: [32m'POST'[31m,
+          headers: [Object: null prototype] {
+            Accept: [32m'application/json, text/plain, */*'[31m,
+            [32m'Content-Type'[31m: [32m'application/json'[31m,
+            [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+            [32m'Content-Length'[31m: [32m'69'[31m,
+            [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+          },
+          agents: {
+            http: [90mundefined[31m,
+            https: [90mundefined[31m
+          },
+          auth: [90mundefined[31m,
+          family: [90mundefined[31m,
+          beforeRedirect: [36m[Function: dispatchBeforeRedirect][31m,
+          beforeRedirects: {
+            proxy: [36m[Function: beforeRedirect][31m
+          },
+          http2Options: [90mundefined[31m,
+          hostname: [32m'localhost'[31m,
+          port: [32m'11434'[31m,
+          agent: [90mundefined[31m,
+          nativeProtocols: {
+            [32m'http:'[31m: [36m[Object][31m,
+            [32m'https:'[31m: [36m[Object][31m
+          },
+          sensitiveHeaders: [],
+          pathname: [32m'/api/embeddings'[31m
+        },
+        _ended: [33mtrue[31m,
+        _ending: [33mtrue[31m,
+        _redirectCount: [33m0[31m,
+        _redirects: [],
+        _requestBodyLength: [33m69[31m,
+        _requestBodyBuffers: [],
+        _eventsCount: [33m3[31m,
+        _onNativeResponse: [36m[Function (anonymous)][31m,
+        _headerFilter: [31m/^(?:Authorization|Proxy-Authorization|Cookie)$/i[31m,
+        _currentRequest: [36m[Circular *2][31m,
+        _currentUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+        _timeout: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+      },
+      [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kBytesWritten)[31m]: [33m0[31m,
+      [[32mSymbol(kNeedDrain)[31m]: [33mfalse[31m,
+      [[32mSymbol(corked)[31m]: [33m0[31m,
+      [[32mSymbol(kChunkedBuffer)[31m]: [],
+      [[32mSymbol(kChunkedLength)[31m]: [33m0[31m,
+      [[32mSymbol(kSocket)[31m]: [36m<ref *1>[31m Socket {
+        connecting: [33mfalse[31m,
+        _hadError: [33mfalse[31m,
+        _parent: [1mnull[22m[1m,
+        _host: [32m'localhost'[31m,
+        _closeAfterHandlingError: [33mfalse[31m,
+        _events: {
+          close: [36m[Function: onClose][31m,
+          error: [Function: bound onceWrapper] {
+            listener: [36m[Function: freeSocketErrorListener][31m
+          },
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          data: [90mundefined[31m,
+          end: [36m[Function: onReadableStreamEnd][31m,
+          readable: [90mundefined[31m,
+          connect: [90mundefined[31m,
+          free: [36m[Function: onFree][31m,
+          timeout: [
+            [36m[Function: onTimeout][31m,
+            [36m[Function (anonymous)][31m
+          ],
+          agentRemove: [36m[Function: onRemove][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m60303620[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17563908[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+        },
+        allowHalfOpen: [33mfalse[31m,
+        _maxListeners: [90mundefined[31m,
+        _eventsCount: [33m[39m[22m
+[1m[31m6[39m,
+        _sockname: [1mnull[22m[1m,
+        _pendingData: [1mnull[22m[1m,
+        _pendingEncoding: [32m''[31m,
+        server: [1mnull[22m[1m,
+        _server: [1mnull[22m[1m,
+        timeout: [33m5000[31m,
+        parser: [1mnull[22m[1m,
+        _httpMessage: [1mnull[22m[1m,
+        autoSelectFamilyAttemptedAddresses: [
+          [32m'::1:11434'[31m,
+          [32m'127.0.0.1:11434'[31m
+        ],
+        [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+        [[32mSymbol(kHandle)[31m]: TCP {
+          reading: [33mtrue[31m,
+          onconnection: [1mnull[22m[1m,
+          [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+        },
+        [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+        [[32mSymbol(timeout)[31m]: Timeout {
+          _idleTimeout: [33m5000[31m,
+          _idlePrev: [36m[TimersList][31m,
+          _idleNext: [36m[TimersList][31m,
+          _idleStart: [33m25302[31m,
+          _onTimeout: [36m[Function: bound ][31m,
+          _timerArgs: [90mundefined[31m,
+          _repeat: [1mnull[22m[1m,
+          _destroyed: [33mfalse[31m,
+          [[32mSymbol(refed)[31m]: [33mfalse[31m,
+          [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+          [[32mSymbol(asyncId)[31m]: [33m123[31m,
+          [[32mSymbol(triggerId)[31m]: [33m121[31m,
+          [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+        },
+        [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+        [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+        [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+      },
+      [[32mSymbol(kOutHeaders)[31m]: [Object: null prototype] {
+        accept: [
+          [32m'Accept'[31m,
+          [32m'application/json, text/plain, */*'[31m
+        ],
+        [32m'content-type'[31m: [
+          [32m'Content-Type'[31m,
+          [32m'application/json'[31m
+        ],
+        [32m'user-agent'[31m: [
+          [32m'User-Agent'[31m,
+          [32m'axios/1.15.0'[31m
+        ],
+        [32m'content-length'[31m: [
+          [32m'Content-Length'[31m,
+          [32m'69'[31m
+        ],
+        [32m'accept-encoding'[31m: [
+          [32m'Accept-Encoding'[31m,
+          [32m'gzip, compress, deflate, br'[31m
+        ],
+        host: [
+          [32m'Host'[31m,
+          [32m'localhost:11434'[31m
+        ]
+      },
+      [[32mSymbol(errored)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kHighWaterMark)[31m]: [33m65536[31m,
+      [[32mSymbol(kRejectNonStandardBodyWrites)[31m]: [33mfalse[31m,
+      [[32mSymbol(kUniqueHeaders)[31m]: [1mnull[22m[1m
+    },
+    data: {
+      error: [32m'model "bge-m3" not found, try pulling it first'[31m
+    }
+  },
+  status: [33m404[31m
+}
+[31m[Nest] 35220  - [31m04/14/2026, 8:27:46 AM [31m  ERROR[31m [38;5;3m[ExceptionsHandler] [31mAxiosError: Request failed with status code 404
+    at settle [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/core/settle.js:20:7[90m)[31m
+    at IncomingMessage.handleStreamEnd [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/adapters/http.js:849:13[90m)[31m
+[90m    at IncomingMessage.emit (node:events:536:35)[31m
+[90m    at endReadableNT (node:internal/streams/readable:1698:12)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:90:21)[31m
+    at Axios.request [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4maxios[24m/lib/core/Axios.js:46:41[90m)[31m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[31m
+    at EmbeddingService.embedText [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/rag/embedding.service.ts:10:22[90m)[31m
+    at RagService.retrieve [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/rag/rag.service.ts:74:28[90m)[31m
+    at ChatService.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.service.ts:23:31[90m)[31m
+    at ChatController.chat [90m(/Users/zuzanakurillova/Desktop/mAItravel2/[31mapps/backend/src/app/chat/chat.controller.ts:21:20[90m)[31m
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at [90m/Users/zuzanakurillova/Desktop/mAItravel2/[31mnode_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  isAxiosError: [33mtrue[31m,
+  code: [32m'ERR_BAD_REQUEST'[31m,
+  config: {
+    transitional: {
+      silentJSONParsing: [33mtrue[31m,
+      forcedJSONParsing: [33mtrue[31m,
+      clarifyTimeoutError: [33mfalse[31m,
+      legacyInterceptorReqResOrdering: [33mtrue[31m
+    },
+    adapter: [
+      [32m'xhr'[31m,
+      [32m'http'[31m,
+      [32m'fetch'[31m
+    ],
+    transformRequest: [
+      [36m[Function: transformRequest][31m
+    ],
+    transformResponse: [
+      [36m[Function: transformResponse][31m
+    ],
+    timeout: [33m0[31m,
+    xsrfCookieName: [32m'XSRF-TOKEN'[31m,
+    xsrfHeaderName: [32m'X-XSRF-TOKEN'[31m,
+    maxContentLength: [33m-1[31m,
+    maxBodyLength: [33m-1[31m,
+    env: {
+      FormData: [Function: FormData] {
+        LINE_BREAK: [32m'\r\n'[31m,
+        DEFAULT_CONTENT_TYPE: [32m'application/octet-stream'[31m
+      },
+      Blob: [36m[class Blob][31m
+    },
+    validateStatus: [36m[Function: validateStatus][31m,
+    headers: Object [AxiosHeaders] {
+      Accept: [32m'application/json, text/plain, */*'[31m,
+      [32m'Content-Type'[31m: [32m'application/json'[31m,
+      [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+      [32m'Content-Length'[31m: [32m'69'[31m,
+      [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+    },
+    method: [32m'post'[31m,
+    url: [32m'http://localhost:11434/api/embeddings'[31m,
+    data: [32m'{"model":"bge-m3","prompt":"Aké sú výhody webových aplikácií?"}'[31m,
+    allowAbsoluteUrls: [33mtrue[31m
+  },
+  request: [36m<ref *2>[31m ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [36m[Function (anonymous)][31m,
+      aborted: [36m[Function (anonymous)][31m,
+      connect: [36m[Function (anonymous)][31m,
+      error: [36m[Function (anonymous)][31m,
+      socket: [36m[Function (anonymous)][31m,
+      timeout: [36m[Function (anonymous)][31m,
+      finish: [36m[Function: requestOnFinish][31m
+    },
+    _eventsCount: [33m7[31m,
+    _maxListeners: [90mundefined[31m,
+    outputData: [],
+    outputSize: [33m0[31m,
+    writable: [33mtrue[31m,
+    destroyed: [33mtrue[31m,
+    _last: [33mfalse[31m,
+    chunkedEncoding: [33mfalse[31m,
+    shouldKeepAlive: [33mtrue[31m,
+    maxRequestsOnConnectionReached: [33mfalse[31m,
+    _defaultKeepAlive: [33mtrue[31m,
+    useChunkedEncodingByDefault: [33mtrue[31m,
+    sendDate: [33mfalse[31m,
+    _removedConnection: [33mfalse[31m,
+    _removedContLen: [33mfalse[31m,
+    _removedTE: [33mfalse[31m,
+    strictContentLength: [33mfalse[31m,
+    _contentLength: [32m'69'[31m,
+    _hasBody: [33mtrue[31m,
+    _trailer: [32m''[31m,
+    finished: [33mtrue[31m,
+    _headerSent: [33mtrue[31m,
+    _closed: [33mtrue[31m,
+    _header: [32m'POST /api/embeddings HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/1.15.0\r\nContent-Length: 69\r\nAccept-Encoding: gzip, compress, deflate, br\r\nHost: localhost:11434\r\nConnection: keep-alive\r\n\r\n'[31m,
+    _keepAliveTimeout: [33m0[31m,
+    _onPendingData: [36m[Function: nop][31m,
+    agent: Agent {
+      _events: [Object: null prototype] {
+        free: [36m[Function (anonymous)][31m,
+        newListener: [36m[Function: maybeEnableKeylog][31m
+      },
+      _eventsCount: [33m[39m[22m
+[1m[31m2[39m,
+      _maxListeners: [90mundefined[31m,
+      defaultPort: [33m80[31m,
+      protocol: [32m'http:'[31m,
+      options: [Object: null prototype] {
+        keepAlive: [33mtrue[31m,
+        scheduling: [32m'lifo'[31m,
+        timeout: [33m5000[31m,
+        noDelay: [33mtrue[31m,
+        path: [1mnull[22m[1m
+      },
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype] {
+        [32m'localhost:11434:'[31m: [
+          Socket {
+            connecting: [33mfalse[31m,
+            _hadError: [33mfalse[31m,
+            _parent: [1mnull[22m[1m,
+            _host: [32m'localhost'[31m,
+            _closeAfterHandlingError: [33mfalse[31m,
+            _events: [36m[Object][31m,
+            _readableState: [36m[ReadableState][31m,
+            _writableState: [36m[WritableState][31m,
+            allowHalfOpen: [33mfalse[31m,
+            _maxListeners: [90mundefined[31m,
+            _eventsCount: [33m6[31m,
+            _sockname: [1mnull[22m[1m,
+            _pendingData: [1mnull[22m[1m,
+            _pendingEncoding: [32m''[31m,
+            server: [1mnull[22m[1m,
+            _server: [1mnull[22m[1m,
+            timeout: [33m5000[31m,
+            parser: [1mnull[22m[1m,
+            _httpMessage: [1mnull[22m[1m,
+            autoSelectFamilyAttemptedAddresses: [36m[Array][31m,
+            [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+            [[32mSymbol(kHandle)[31m]: [36m[TCP][31m,
+            [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+            [[32mSymbol(timeout)[31m]: Timeout {
+              _idleTimeout: [33m5000[31m,
+              _idlePrev: [36m[TimersList][31m,
+              _idleNext: [36m[TimersList][31m,
+              _idleStart: [33m25302[31m,
+              _onTimeout: [36m[Function: bound ][31m,
+              _timerArgs: [90mundefined[31m,
+              _repeat: [1mnull[22m[1m,
+              _destroyed: [33mfalse[31m,
+              [[32mSymbol(refed)[31m]: [33mfalse[31m,
+              [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+              [[32mSymbol(asyncId)[31m]: [33m123[31m,
+              [[32mSymbol(triggerId)[31m]: [33m121[31m,
+              [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+            },
+            [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+            [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+            [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+            [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+            [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+            [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+            [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+          }
+        ]
+      },
+      keepAliveMsecs: [33m1000[31m,
+      keepAlive: [33mtrue[31m,
+      maxSockets: [33mInfinity[31m,
+      maxFreeSockets: [33m256[31m,
+      scheduling: [32m'lifo'[31m,
+      maxTotalSockets: [33mInfinity[31m,
+      totalSocketCount: [33m1[31m,
+      [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+    },
+    socketPath: [90mundefined[31m,
+    method: [32m'POST'[31m,
+    maxHeaderSize: [90mundefined[31m,
+    insecureHTTPParser: [90mundefined[31m,
+    joinDuplicateHeaders: [90mundefined[31m,
+    path: [32m'/api/embeddings'[31m,
+    _ended: [33mtrue[31m,
+    res: IncomingMessage {
+      _events: {
+        close: [90mundefined[31m,
+        error: [36m[Function: handleStreamError][31m,
+        data: [36m[Function: handleStreamData][31m,
+        end: [
+          [36m[Function: responseOnEnd][31m,
+          [36m[Function: handleStreamEnd][31m
+        ],
+        readable: [90mundefined[31m,
+        aborted: [36m[Function: handlerStreamAborted][31m
+      },
+      _readableState: ReadableState {
+        highWaterMark: [33m65536[31m,
+        buffer: [],
+        bufferIndex: [33m0[31m,
+        length: [33m0[31m,
+        pipes: [],
+        awaitDrainWriters: [1mnull[22m[1m,
+        [[32mSymbol(kState)[31m]: [33m194779004[31m
+      },
+      _maxListeners: [90mundefined[31m,
+      socket: [1mnull[22m[1m,
+      httpVersionMajor: [33m1[31m,
+      httpVersionMinor: [33m1[31m,
+      httpVersion: [32m'1.1'[31m,
+      complete: [33mtrue[31m,
+      rawHeaders: [
+        [32m'Content-Type'[31m,
+        [32m'application/json; charset=utf-8'[31m,
+        [32m'Date'[31m,
+        [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+        [32m'Content-Length'[31m,
+        [32m'60'[31m
+      ],
+      rawTrailers: [],
+      joinDuplicateHeaders: [90mundefined[31m,
+      aborted: [33mfalse[31m,
+      upgrade: [33mfalse[31m,
+      url: [32m''[31m,
+      method: [1mnull[22m[1m,
+      statusCode: [33m404[31m,
+      statusMessage: [32m'Not Found'[31m,
+      client: [36m<ref *1>[31m Socket {
+        connecting: [33mfalse[31m,
+        _hadError: [33mfalse[31m,
+        _parent: [1mnull[22m[1m,
+        _host: [32m'localhost'[31m,
+        _closeAfterHandlingError: [33mfalse[31m,
+        _events: {
+          close: [36m[Function: onClose][31m,
+          error: [Function: bound onceWrapper] {
+            listener: [36m[Function: freeSocketErrorListener][31m
+          },
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          data: [90mundefined[31m,
+          end: [36m[Function: onReadableStreamEnd][31m,
+          readable: [90mundefined[31m,
+          connect: [90mundefined[31m,
+          free: [36m[Function: onFree][31m,
+          timeout: [
+            [36m[Function: onTimeout][31m,
+            [36m[Function (anonymous)][31m
+          ],
+          agentRemove: [36m[Function: onRemove][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m60303620[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17563908[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+        },
+        allowHalfOpen: [33mfalse[31m,
+        _maxListeners: [90mundefined[31m,
+        _eventsCount: [33m6[31m,
+        _sockname: [1mnull[22m[1m,
+        _pendingData: [1mnull[22m[1m,
+        _pendingEncoding: [32m''[31m,
+        server: [1mnull[22m[1m,
+        _server: [1mnull[22m[1m,
+        timeout: [33m5000[31m,
+        parser: [1mnull[22m[1m,
+        _httpMessage: [1mnull[22m[1m,
+        autoSelectFamilyAttemptedAddresses: [
+          [32m'::1:11434'[31m,
+          [32m'127.0.0.1:11434'[31m
+        ],
+        [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+        [[32mSymbol(kHandle)[31m]: TCP {
+          reading: [33mtrue[31m,
+          onconnection: [1mnull[22m[1m,
+          [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+        },
+        [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+        [[32mSymbol(timeout)[31m]: Timeout {
+          _idleTimeout: [33m5000[31m,
+          _idlePrev: [36m[TimersList][31m,
+          _idleNext: [36m[TimersList][31m,
+          _idleStart: [33m25302[31m,
+          _onTimeout: [36m[Function: bound ][31m,
+          _timerArgs: [90mundefined[31m,
+          _repeat: [1mnull[22m[1m,
+          _destroyed: [33mfalse[31m,
+          [[32mSymbol(refed)[31m]: [33mfalse[31m,
+          [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+          [[32mSymbol(asyncId)[31m]: [33[39m[22m
+[1m[31mm123[39m,
+          [[32mSymbol(triggerId)[31m]: [33m121[31m,
+          [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+        },
+        [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+        [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+        [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+      },
+      _consuming: [33mfalse[31m,
+      _dumped: [33mfalse[31m,
+      req: [36m[Circular *2][31m,
+      _eventsCount: [33m4[31m,
+      responseUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+      redirects: [],
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kHeaders)[31m]: {
+        [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+        date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+        [32m'content-length'[31m: [32m'60'[31m
+      },
+      [[32mSymbol(kHeadersCount)[31m]: [33m6[31m,
+      [[32mSymbol(kTrailers)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kTrailersCount)[31m]: [33m0[31m
+    },
+    aborted: [33mfalse[31m,
+    timeoutCb: [1mnull[22m[1m,
+    upgradeOrConnect: [33mfalse[31m,
+    parser: [1mnull[22m[1m,
+    maxHeadersCount: [1mnull[22m[1m,
+    reusedSocket: [33mfalse[31m,
+    host: [32m'localhost'[31m,
+    protocol: [32m'http:'[31m,
+    _redirectable: Writable {
+      _events: {
+        close: [90mundefined[31m,
+        error: [36m[Function: handleRequestError][31m,
+        prefinish: [90mundefined[31m,
+        finish: [90mundefined[31m,
+        drain: [90mundefined[31m,
+        response: [36m[Function: handleResponse][31m,
+        socket: [
+          [36m[Function: handleRequestSocket][31m,
+          [36m[Function: destroyOnTimeout][31m
+        ],
+        abort: [90mundefined[31m
+      },
+      _writableState: WritableState {
+        highWaterMark: [33m65536[31m,
+        length: [33m0[31m,
+        corked: [33m0[31m,
+        onwrite: [36m[Function: bound onwrite][31m,
+        writelen: [33m0[31m,
+        bufferedIndex: [33m0[31m,
+        pendingcb: [33m0[31m,
+        [[32mSymbol(kState)[31m]: [33m17580812[31m,
+        [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m
+      },
+      _maxListeners: [90mundefined[31m,
+      _options: {
+        maxRedirects: [33m21[31m,
+        maxBodyLength: [33mInfinity[31m,
+        protocol: [32m'http:'[31m,
+        path: [32m'/api/embeddings'[31m,
+        method: [32m'POST'[31m,
+        headers: [Object: null prototype] {
+          Accept: [32m'application/json, text/plain, */*'[31m,
+          [32m'Content-Type'[31m: [32m'application/json'[31m,
+          [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+          [32m'Content-Length'[31m: [32m'69'[31m,
+          [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+        },
+        agents: {
+          http: [90mundefined[31m,
+          https: [90mundefined[31m
+        },
+        auth: [90mundefined[31m,
+        family: [90mundefined[31m,
+        beforeRedirect: [36m[Function: dispatchBeforeRedirect][31m,
+        beforeRedirects: {
+          proxy: [36m[Function: beforeRedirect][31m
+        },
+        http2Options: [90mundefined[31m,
+        hostname: [32m'localhost'[31m,
+        port: [32m'11434'[31m,
+        agent: [90mundefined[31m,
+        nativeProtocols: {
+          [32m'http:'[31m: {
+            _connectionListener: [36m[Function: connectionListener][31m,
+            METHODS: [36m[Array][31m,
+            STATUS_CODES: [36m[Object][31m,
+            Agent: [36m[Function][31m,
+            ClientRequest: [36m[Function: ClientRequest][31m,
+            IncomingMessage: [36m[Function: IncomingMessage][31m,
+            OutgoingMessage: [36m[Function: OutgoingMessage][31m,
+            Server: [36m[Function: Server][31m,
+            ServerResponse: [36m[Function: ServerResponse][31m,
+            createServer: [36m[Function: createServer][31m,
+            validateHeaderName: [36m[Function][31m,
+            validateHeaderValue: [36m[Function][31m,
+            get: [36m[Function: get][31m,
+            request: [36m[Function: request][31m,
+            setMaxIdleHTTPParsers: [36m[Function: setMaxIdleHTTPParsers][31m,
+            maxHeaderSize: [36m[Getter][31m,
+            globalAgent: [36m[Getter/Setter][31m,
+            WebSocket: [36m[Getter][31m,
+            CloseEvent: [36m[Getter][31m,
+            MessageEvent: [36m[Getter][31m
+          },
+          [32m'https:'[31m: {
+            Agent: [36m[Function: Agent][31m,
+            globalAgent: [36m[Agent][31m,
+            Server: [36m[Function: Server][31m,
+            createServer: [36m[Function: createServer][31m,
+            get: [36m[Function: get][31m,
+            request: [36m[Function: request][31m
+          }
+        },
+        sensitiveHeaders: [],
+        pathname: [32m'/api/embeddings'[31m
+      },
+      _ended: [33mtrue[31m,
+      _ending: [33mtrue[31m,
+      _redirectCount: [33m0[31m,
+      _redirects: [],
+      _requestBodyLength: [33m69[31m,
+      _requestBodyBuffers: [],
+      _eventsCount: [33m3[31m,
+      _onNativeResponse: [36m[Function (anonymous)][31m,
+      _headerFilter: [31m/^(?:Authorization|Proxy-Authorization|Cookie)$/i[31m,
+      _currentRequest: [36m[Circular *2][31m,
+      _currentUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+      _timeout: [1mnull[22m[1m,
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+    },
+    [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+    [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+    [[32mSymbol(kBytesWritten)[31m]: [33m0[31m,
+    [[32mSymbol(kNeedDrain)[31m]: [33mfalse[31m,
+    [[32mSymbol(corked)[31m]: [33m0[31m,
+    [[32mSymbol(kChunkedBuffer)[31m]: [],
+    [[32mSymbol(kChunkedLength)[31m]: [33m0[31m,
+    [[32mSymbol(kSocket)[31m]: [36m<ref *1>[31m Socket {
+      connecting: [33mfalse[31m,
+      _hadError: [33mfalse[31m,
+      _parent: [1mnull[22m[1m,
+      _host: [32m'localhost'[31m,
+      _closeAfterHandlingError: [33mfalse[31m,
+      _events: {
+        close: [36m[Function: onClose][31m,
+        error: [Function: bound onceWrapper] {
+          listener: [36m[Function: freeSocketErrorListener][31m
+        },
+        prefinish: [90mundefined[31m,
+        finish: [90mundefined[31m,
+        drain: [90mundefined[31m,
+        data: [90mundefined[31m,
+        end: [36m[Function: onReadableStreamEnd][31m,
+        readable: [90mundefined[31m,
+        connect: [90mundefined[31m,
+        free: [36m[Function: onFree][31m,
+        timeout: [
+          [36m[Function: onTimeout][31m,
+          [36m[Function (anonymous)][31m
+        ],
+        agentRemove: [36m[Function: onRemove][31m
+      },
+      _readableState: ReadableState {
+        highWaterMark: [33m65536[31m,
+        buffer: [],
+        bufferIndex: [33m0[31m,
+        length: [33m0[31m,
+        pipes: [],
+        awaitDrainWriters: [1mnull[22m[1m,
+        [[32mSymbol(kState)[31m]: [33m60303620[31m
+      },
+      _writableState: WritableState {
+        highWaterMark: [33m65536[31m,
+        length: [33m0[31m,
+        corked: [33m0[31m,
+        onwrite: [36m[Function: bound onwrite][31m,
+        writelen: [33m0[31m,
+        bufferedIndex: [33m0[31m,
+        pendingcb: [33m0[31m,
+        [[32mSymbol(kState)[31m]: [33m17563908[31m,
+        [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+      },
+      allowHalfOpen: [33mfalse[31m,
+      _maxListeners: [90mundefined[31m,
+      _eventsCount: [33m6[31m,
+      _sockname: [1mnull[22m[1m,
+      _pendingData: [1mnull[22m[1m,
+      _[39m[22m
+[1m[31mpendingEncoding: [32m''[31m,
+      server: [1mnull[22m[1m,
+      _server: [1mnull[22m[1m,
+      timeout: [33m5000[31m,
+      parser: [1mnull[22m[1m,
+      _httpMessage: [1mnull[22m[1m,
+      autoSelectFamilyAttemptedAddresses: [
+        [32m'::1:11434'[31m,
+        [32m'127.0.0.1:11434'[31m
+      ],
+      [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+      [[32mSymbol(kHandle)[31m]: TCP {
+        reading: [33mtrue[31m,
+        onconnection: [1mnull[22m[1m,
+        [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+      },
+      [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+      [[32mSymbol(timeout)[31m]: Timeout {
+        _idleTimeout: [33m5000[31m,
+        _idlePrev: [36m[TimersList][31m,
+        _idleNext: [36m[TimersList][31m,
+        _idleStart: [33m25302[31m,
+        _onTimeout: [36m[Function: bound ][31m,
+        _timerArgs: [90mundefined[31m,
+        _repeat: [1mnull[22m[1m,
+        _destroyed: [33mfalse[31m,
+        [[32mSymbol(refed)[31m]: [33mfalse[31m,
+        [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+        [[32mSymbol(asyncId)[31m]: [33m123[31m,
+        [[32mSymbol(triggerId)[31m]: [33m121[31m,
+        [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+      },
+      [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+      [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+      [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+      [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+      [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+    },
+    [[32mSymbol(kOutHeaders)[31m]: [Object: null prototype] {
+      accept: [
+        [32m'Accept'[31m,
+        [32m'application/json, text/plain, */*'[31m
+      ],
+      [32m'content-type'[31m: [
+        [32m'Content-Type'[31m,
+        [32m'application/json'[31m
+      ],
+      [32m'user-agent'[31m: [
+        [32m'User-Agent'[31m,
+        [32m'axios/1.15.0'[31m
+      ],
+      [32m'content-length'[31m: [
+        [32m'Content-Length'[31m,
+        [32m'69'[31m
+      ],
+      [32m'accept-encoding'[31m: [
+        [32m'Accept-Encoding'[31m,
+        [32m'gzip, compress, deflate, br'[31m
+      ],
+      host: [
+        [32m'Host'[31m,
+        [32m'localhost:11434'[31m
+      ]
+    },
+    [[32mSymbol(errored)[31m]: [1mnull[22m[1m,
+    [[32mSymbol(kHighWaterMark)[31m]: [33m65536[31m,
+    [[32mSymbol(kRejectNonStandardBodyWrites)[31m]: [33mfalse[31m,
+    [[32mSymbol(kUniqueHeaders)[31m]: [1mnull[22m[1m
+  },
+  response: {
+    status: [33m404[31m,
+    statusText: [32m'Not Found'[31m,
+    headers: Object [AxiosHeaders] {
+      [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+      date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+      [32m'content-length'[31m: [32m'60'[31m
+    },
+    config: {
+      transitional: {
+        silentJSONParsing: [33mtrue[31m,
+        forcedJSONParsing: [33mtrue[31m,
+        clarifyTimeoutError: [33mfalse[31m,
+        legacyInterceptorReqResOrdering: [33mtrue[31m
+      },
+      adapter: [
+        [32m'xhr'[31m,
+        [32m'http'[31m,
+        [32m'fetch'[31m
+      ],
+      transformRequest: [
+        [36m[Function: transformRequest][31m
+      ],
+      transformResponse: [
+        [36m[Function: transformResponse][31m
+      ],
+      timeout: [33m0[31m,
+      xsrfCookieName: [32m'XSRF-TOKEN'[31m,
+      xsrfHeaderName: [32m'X-XSRF-TOKEN'[31m,
+      maxContentLength: [33m-1[31m,
+      maxBodyLength: [33m-1[31m,
+      env: {
+        FormData: [Function: FormData] {
+          LINE_BREAK: [32m'\r\n'[31m,
+          DEFAULT_CONTENT_TYPE: [32m'application/octet-stream'[31m
+        },
+        Blob: [36m[class Blob][31m
+      },
+      validateStatus: [36m[Function: validateStatus][31m,
+      headers: Object [AxiosHeaders] {
+        Accept: [32m'application/json, text/plain, */*'[31m,
+        [32m'Content-Type'[31m: [32m'application/json'[31m,
+        [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+        [32m'Content-Length'[31m: [32m'69'[31m,
+        [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+      },
+      method: [32m'post'[31m,
+      url: [32m'http://localhost:11434/api/embeddings'[31m,
+      data: [32m'{"model":"bge-m3","prompt":"Aké sú výhody webových aplikácií?"}'[31m,
+      allowAbsoluteUrls: [33mtrue[31m
+    },
+    request: [36m<ref *2>[31m ClientRequest {
+      _events: [Object: null prototype] {
+        abort: [36m[Function (anonymous)][31m,
+        aborted: [36m[Function (anonymous)][31m,
+        connect: [36m[Function (anonymous)][31m,
+        error: [36m[Function (anonymous)][31m,
+        socket: [36m[Function (anonymous)][31m,
+        timeout: [36m[Function (anonymous)][31m,
+        finish: [36m[Function: requestOnFinish][31m
+      },
+      _eventsCount: [33m7[31m,
+      _maxListeners: [90mundefined[31m,
+      outputData: [],
+      outputSize: [33m0[31m,
+      writable: [33mtrue[31m,
+      destroyed: [33mtrue[31m,
+      _last: [33mfalse[31m,
+      chunkedEncoding: [33mfalse[31m,
+      shouldKeepAlive: [33mtrue[31m,
+      maxRequestsOnConnectionReached: [33mfalse[31m,
+      _defaultKeepAlive: [33mtrue[31m,
+      useChunkedEncodingByDefault: [33mtrue[31m,
+      sendDate: [33mfalse[31m,
+      _removedConnection: [33mfalse[31m,
+      _removedContLen: [33mfalse[31m,
+      _removedTE: [33mfalse[31m,
+      strictContentLength: [33mfalse[31m,
+      _contentLength: [32m'69'[31m,
+      _hasBody: [33mtrue[31m,
+      _trailer: [32m''[31m,
+      finished: [33mtrue[31m,
+      _headerSent: [33mtrue[31m,
+      _closed: [33mtrue[31m,
+      _header: [32m'POST /api/embeddings HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/1.15.0\r\nContent-Length: 69\r\nAccept-Encoding: gzip, compress, deflate, br\r\nHost: localhost:11434\r\nConnection: keep-alive\r\n\r\n'[31m,
+      _keepAliveTimeout: [33m0[31m,
+      _onPendingData: [36m[Function: nop][31m,
+      agent: Agent {
+        _events: [Object: null prototype] {
+          free: [36m[Function (anonymous)][31m,
+          newListener: [36m[Function: maybeEnableKeylog][31m
+        },
+        _eventsCount: [33m2[31m,
+        _maxListeners: [90mundefined[31m,
+        defaultPort: [33m80[31m,
+        protocol: [32m'http:'[31m,
+        options: [Object: null prototype] {
+          keepAlive: [33mtrue[31m,
+          scheduling: [32m'lifo'[31m,
+          timeout: [33m5000[31m,
+          noDelay: [33mtrue[31m,
+          path: [1mnull[22m[1m
+        },
+        requests: [Object: null prototype] {},
+        sockets: [Object: null prototype] {},
+        freeSockets: [Object: null prototype] {
+          [32m'localhost:11434:'[31m: [
+            [36m[Socket][31m
+          ]
+        },
+        keepAliveMsecs: [33m1000[31m,
+        keepAlive: [33mtrue[31m,
+        maxSockets: [33mInfinity[31m,
+        maxFreeSockets: [33m256[31m,
+        scheduling: [32m'lifo'[31m,
+        maxTotalSockets: [33mInfinity[31m,
+        totalSocketCount: [33m1[31m,
+        [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+      },
+      socketPath: [90mundefined[31m,
+      method: [32m'POST'[31m,
+      maxHeaderSize: [90mundefined[31m,
+      insecureHTTPParser: [90mundefined[31m,
+      joinDuplicateHeaders: [90mundefined[31m,
+      path: [32m'/api/embeddings'[31m,
+      _ended: [33mtrue[31m,
+      res: IncomingMessage {
+        _events: {
+          close: [90mundefined[31m,
+          error: [36m[Function: handleStreamError][31m,
+          data: [36m[Function: handleStreamData][31m,
+          end: [
+            [36m[Function: responseOnEnd][31m,
+            [36m[Function: handleStreamEnd][31m
+          ],
+          readable: [90mundefined[31m,
+          a[39m[22m
+[1m[31mborted: [36m[Function: handlerStreamAborted][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m194779004[31m
+        },
+        _maxListeners: [90mundefined[31m,
+        socket: [1mnull[22m[1m,
+        httpVersionMajor: [33m1[31m,
+        httpVersionMinor: [33m1[31m,
+        httpVersion: [32m'1.1'[31m,
+        complete: [33mtrue[31m,
+        rawHeaders: [
+          [32m'Content-Type'[31m,
+          [32m'application/json; charset=utf-8'[31m,
+          [32m'Date'[31m,
+          [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+          [32m'Content-Length'[31m,
+          [32m'60'[31m
+        ],
+        rawTrailers: [],
+        joinDuplicateHeaders: [90mundefined[31m,
+        aborted: [33mfalse[31m,
+        upgrade: [33mfalse[31m,
+        url: [32m''[31m,
+        method: [1mnull[22m[1m,
+        statusCode: [33m404[31m,
+        statusMessage: [32m'Not Found'[31m,
+        client: [36m<ref *1>[31m Socket {
+          connecting: [33mfalse[31m,
+          _hadError: [33mfalse[31m,
+          _parent: [1mnull[22m[1m,
+          _host: [32m'localhost'[31m,
+          _closeAfterHandlingError: [33mfalse[31m,
+          _events: {
+            close: [36m[Function: onClose][31m,
+            error: [36m[Function][31m,
+            prefinish: [90mundefined[31m,
+            finish: [90mundefined[31m,
+            drain: [90mundefined[31m,
+            data: [90mundefined[31m,
+            end: [36m[Function: onReadableStreamEnd][31m,
+            readable: [90mundefined[31m,
+            connect: [90mundefined[31m,
+            free: [36m[Function: onFree][31m,
+            timeout: [36m[Array][31m,
+            agentRemove: [36m[Function: onRemove][31m
+          },
+          _readableState: ReadableState {
+            highWaterMark: [33m65536[31m,
+            buffer: [],
+            bufferIndex: [33m0[31m,
+            length: [33m0[31m,
+            pipes: [],
+            awaitDrainWriters: [1mnull[22m[1m,
+            [[32mSymbol(kState)[31m]: [33m60303620[31m
+          },
+          _writableState: WritableState {
+            highWaterMark: [33m65536[31m,
+            length: [33m0[31m,
+            corked: [33m0[31m,
+            onwrite: [36m[Function: bound onwrite][31m,
+            writelen: [33m0[31m,
+            bufferedIndex: [33m0[31m,
+            pendingcb: [33m0[31m,
+            [[32mSymbol(kState)[31m]: [33m17563908[31m,
+            [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+            [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+          },
+          allowHalfOpen: [33mfalse[31m,
+          _maxListeners: [90mundefined[31m,
+          _eventsCount: [33m6[31m,
+          _sockname: [1mnull[22m[1m,
+          _pendingData: [1mnull[22m[1m,
+          _pendingEncoding: [32m''[31m,
+          server: [1mnull[22m[1m,
+          _server: [1mnull[22m[1m,
+          timeout: [33m5000[31m,
+          parser: [1mnull[22m[1m,
+          _httpMessage: [1mnull[22m[1m,
+          autoSelectFamilyAttemptedAddresses: [
+            [32m'::1:11434'[31m,
+            [32m'127.0.0.1:11434'[31m
+          ],
+          [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+          [[32mSymbol(kHandle)[31m]: TCP {
+            reading: [33mtrue[31m,
+            onconnection: [1mnull[22m[1m,
+            [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+          },
+          [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+          [[32mSymbol(timeout)[31m]: Timeout {
+            _idleTimeout: [33m5000[31m,
+            _idlePrev: [36m[TimersList][31m,
+            _idleNext: [36m[TimersList][31m,
+            _idleStart: [33m25302[31m,
+            _onTimeout: [36m[Function: bound ][31m,
+            _timerArgs: [90mundefined[31m,
+            _repeat: [1mnull[22m[1m,
+            _destroyed: [33mfalse[31m,
+            [[32mSymbol(refed)[31m]: [33mfalse[31m,
+            [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+            [[32mSymbol(asyncId)[31m]: [33m123[31m,
+            [[32mSymbol(triggerId)[31m]: [33m121[31m,
+            [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+          },
+          [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+          [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+          [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+          [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+          [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+          [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+          [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+        },
+        _consuming: [33mfalse[31m,
+        _dumped: [33mfalse[31m,
+        req: [36m[Circular *2][31m,
+        _eventsCount: [33m4[31m,
+        responseUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+        redirects: [],
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kHeaders)[31m]: {
+          [32m'content-type'[31m: [32m'application/json; charset=utf-8'[31m,
+          date: [32m'Tue, 14 Apr 2026 06:27:46 GMT'[31m,
+          [32m'content-length'[31m: [32m'60'[31m
+        },
+        [[32mSymbol(kHeadersCount)[31m]: [33m6[31m,
+        [[32mSymbol(kTrailers)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kTrailersCount)[31m]: [33m0[31m
+      },
+      aborted: [33mfalse[31m,
+      timeoutCb: [1mnull[22m[1m,
+      upgradeOrConnect: [33mfalse[31m,
+      parser: [1mnull[22m[1m,
+      maxHeadersCount: [1mnull[22m[1m,
+      reusedSocket: [33mfalse[31m,
+      host: [32m'localhost'[31m,
+      protocol: [32m'http:'[31m,
+      _redirectable: Writable {
+        _events: {
+          close: [90mundefined[31m,
+          error: [36m[Function: handleRequestError][31m,
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          response: [36m[Function: handleResponse][31m,
+          socket: [
+            [36m[Function: handleRequestSocket][31m,
+            [36m[Function: destroyOnTimeout][31m
+          ],
+          abort: [90mundefined[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17580812[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m
+        },
+        _maxListeners: [90mundefined[31m,
+        _options: {
+          maxRedirects: [33m21[31m,
+          maxBodyLength: [33mInfinity[31m,
+          protocol: [32m'http:'[31m,
+          path: [32m'/api/embeddings'[31m,
+          method: [32m'POST'[31m,
+          headers: [Object: null prototype] {
+            Accept: [32m'application/json, text/plain, */*'[31m,
+            [32m'Content-Type'[31m: [32m'application/json'[31m,
+            [32m'User-Agent'[31m: [32m'axios/1.15.0'[31m,
+            [32m'Content-Length'[31m: [32m'69'[31m,
+            [32m'Accept-Encoding'[31m: [32m'gzip, compress, deflate, br'[31m
+          },
+          agents: {
+            http: [90mundefined[31m,
+            https: [90mundefined[31m
+          },
+          auth: [90mundefined[31m,
+          family: [90mundefined[31m,
+          beforeRedirect: [36m[Function: dispatchBeforeRedirect][31m,
+          beforeRedirects: {
+            proxy: [36m[Function: beforeRedirect][31m
+          },
+          http2Options: [90mundefined[31m,
+          hostname: [32m'localhost'[31m,
+          port: [32m'11434'[31m,
+          agent: [90mundefined[31m,
+          nativ[39m[22m
+[1m[31meProtocols: {
+            [32m'http:'[31m: [36m[Object][31m,
+            [32m'https:'[31m: [36m[Object][31m
+          },
+          sensitiveHeaders: [],
+          pathname: [32m'/api/embeddings'[31m
+        },
+        _ended: [33mtrue[31m,
+        _ending: [33mtrue[31m,
+        _redirectCount: [33m0[31m,
+        _redirects: [],
+        _requestBodyLength: [33m69[31m,
+        _requestBodyBuffers: [],
+        _eventsCount: [33m3[31m,
+        _onNativeResponse: [36m[Function (anonymous)][31m,
+        _headerFilter: [31m/^(?:Authorization|Proxy-Authorization|Cookie)$/i[31m,
+        _currentRequest: [36m[Circular *2][31m,
+        _currentUrl: [32m'http://localhost:11434/api/embeddings'[31m,
+        _timeout: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m
+      },
+      [[32mSymbol(shapeMode)[31m]: [33mfalse[31m,
+      [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+      [[32mSymbol(kBytesWritten)[31m]: [33m0[31m,
+      [[32mSymbol(kNeedDrain)[31m]: [33mfalse[31m,
+      [[32mSymbol(corked)[31m]: [33m0[31m,
+      [[32mSymbol(kChunkedBuffer)[31m]: [],
+      [[32mSymbol(kChunkedLength)[31m]: [33m0[31m,
+      [[32mSymbol(kSocket)[31m]: [36m<ref *1>[31m Socket {
+        connecting: [33mfalse[31m,
+        _hadError: [33mfalse[31m,
+        _parent: [1mnull[22m[1m,
+        _host: [32m'localhost'[31m,
+        _closeAfterHandlingError: [33mfalse[31m,
+        _events: {
+          close: [36m[Function: onClose][31m,
+          error: [Function: bound onceWrapper] {
+            listener: [36m[Function: freeSocketErrorListener][31m
+          },
+          prefinish: [90mundefined[31m,
+          finish: [90mundefined[31m,
+          drain: [90mundefined[31m,
+          data: [90mundefined[31m,
+          end: [36m[Function: onReadableStreamEnd][31m,
+          readable: [90mundefined[31m,
+          connect: [90mundefined[31m,
+          free: [36m[Function: onFree][31m,
+          timeout: [
+            [36m[Function: onTimeout][31m,
+            [36m[Function (anonymous)][31m
+          ],
+          agentRemove: [36m[Function: onRemove][31m
+        },
+        _readableState: ReadableState {
+          highWaterMark: [33m65536[31m,
+          buffer: [],
+          bufferIndex: [33m0[31m,
+          length: [33m0[31m,
+          pipes: [],
+          awaitDrainWriters: [1mnull[22m[1m,
+          [[32mSymbol(kState)[31m]: [33m60303620[31m
+        },
+        _writableState: WritableState {
+          highWaterMark: [33m65536[31m,
+          length: [33m0[31m,
+          corked: [33m0[31m,
+          onwrite: [36m[Function: bound onwrite][31m,
+          writelen: [33m0[31m,
+          bufferedIndex: [33m0[31m,
+          pendingcb: [33m0[31m,
+          [[32mSymbol(kState)[31m]: [33m17563908[31m,
+          [[32mSymbol(kBufferedValue)[31m]: [1mnull[22m[1m,
+          [[32mSymbol(kWriteCbValue)[31m]: [1mnull[22m[1m
+        },
+        allowHalfOpen: [33mfalse[31m,
+        _maxListeners: [90mundefined[31m,
+        _eventsCount: [33m6[31m,
+        _sockname: [1mnull[22m[1m,
+        _pendingData: [1mnull[22m[1m,
+        _pendingEncoding: [32m''[31m,
+        server: [1mnull[22m[1m,
+        _server: [1mnull[22m[1m,
+        timeout: [33m5000[31m,
+        parser: [1mnull[22m[1m,
+        _httpMessage: [1mnull[22m[1m,
+        autoSelectFamilyAttemptedAddresses: [
+          [32m'::1:11434'[31m,
+          [32m'127.0.0.1:11434'[31m
+        ],
+        [[32mSymbol(async_id_symbol)[31m]: [33m-1[31m,
+        [[32mSymbol(kHandle)[31m]: TCP {
+          reading: [33mtrue[31m,
+          onconnection: [1mnull[22m[1m,
+          [[32mSymbol(owner_symbol)[31m]: [36m[Circular *1][31m
+        },
+        [[32mSymbol(lastWriteQueueSize)[31m]: [33m0[31m,
+        [[32mSymbol(timeout)[31m]: Timeout {
+          _idleTimeout: [33m5000[31m,
+          _idlePrev: [36m[TimersList][31m,
+          _idleNext: [36m[TimersList][31m,
+          _idleStart: [33m25302[31m,
+          _onTimeout: [36m[Function: bound ][31m,
+          _timerArgs: [90mundefined[31m,
+          _repeat: [1mnull[22m[1m,
+          _destroyed: [33mfalse[31m,
+          [[32mSymbol(refed)[31m]: [33mfalse[31m,
+          [[32mSymbol(kHasPrimitive)[31m]: [33mfalse[31m,
+          [[32mSymbol(asyncId)[31m]: [33m123[31m,
+          [[32mSymbol(triggerId)[31m]: [33m121[31m,
+          [[32mSymbol(kAsyncContextFrame)[31m]: [90mundefined[31m
+        },
+        [[32mSymbol(kBuffer)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferCb)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(kBufferGen)[31m]: [1mnull[22m[1m,
+        [[32mSymbol(shapeMode)[31m]: [33mtrue[31m,
+        [[32mSymbol(kCapture)[31m]: [33mfalse[31m,
+        [[32mSymbol(kSetNoDelay)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAlive)[31m]: [33mtrue[31m,
+        [[32mSymbol(kSetKeepAliveInitialDelay)[31m]: [33m1[31m,
+        [[32mSymbol(kBytesRead)[31m]: [33m0[31m,
+        [[32mSymbol(kBytesWritten)[31m]: [33m0[31m
+      },
+      [[32mSymbol(kOutHeaders)[31m]: [Object: null prototype] {
+        accept: [
+          [32m'Accept'[31m,
+          [32m'application/json, text/plain, */*'[31m
+        ],
+        [32m'content-type'[31m: [
+          [32m'Content-Type'[31m,
+          [32m'application/json'[31m
+        ],
+        [32m'user-agent'[31m: [
+          [32m'User-Agent'[31m,
+          [32m'axios/1.15.0'[31m
+        ],
+        [32m'content-length'[31m: [
+          [32m'Content-Length'[31m,
+          [32m'69'[31m
+        ],
+        [32m'accept-encoding'[31m: [
+          [32m'Accept-Encoding'[31m,
+          [32m'gzip, compress, deflate, br'[31m
+        ],
+        host: [
+          [32m'Host'[31m,
+          [32m'localhost:11434'[31m
+        ]
+      },
+      [[32mSymbol(errored)[31m]: [1mnull[22m[1m,
+      [[32mSymbol(kHighWaterMark)[31m]: [33m65536[31m,
+      [[32mSymbol(kRejectNonStandardBodyWrites)[31m]: [33mfalse[31m,
+      [[32mSymbol(kUniqueHeaders)[31m]: [1mnull[22m[1m
+    },
+    data: {
+      error: [32m'model "bge-m3" not found, try pulling it first'[31m
+    }
+  },
+  status: [33m404[31m
+}
+[39m[22m
