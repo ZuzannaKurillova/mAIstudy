@@ -1,37 +1,5 @@
 {
   "nodes": {
-    "backend-e2e": {
-      "name": "backend-e2e",
-      "type": "e2e",
-      "data": {
-        "root": "apps/backend-e2e",
-        "name": "backend-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "projectType": "application",
-        "implicitDependencies": [
-          "backend"
-        ],
-        "targets": {
-          "e2e": {
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{e2eProjectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/backend-e2e/jest.config.cts",
-              "passWithNoTests": true
-            },
-            "dependsOn": [
-              "backend:build",
-              "backend:serve"
-            ],
-            "configurations": {},
-            "parallelism": true
-          }
-        },
-        "tags": []
-      }
-    },
     "frontend": {
       "name": "frontend",
       "type": "app",
@@ -15000,23 +14968,6 @@
     }
   },
   "dependencies": {
-    "backend-e2e": [
-      {
-        "source": "backend-e2e",
-        "target": "backend",
-        "type": "implicit"
-      },
-      {
-        "source": "backend-e2e",
-        "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "backend-e2e",
-        "target": "npm:@nx/node",
-        "type": "static"
-      }
-    ],
     "frontend": [
       {
         "source": "frontend",
@@ -34765,5 +34716,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1776157680871
+  "computedAt": 1776162479861
 }

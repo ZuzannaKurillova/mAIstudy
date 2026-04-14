@@ -317,64 +317,6 @@
       "nx/core/project-json"
     ]
   },
-  "apps/backend-e2e": {
-    "root": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "name": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies.backend": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.executor": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.outputs": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.dependsOn": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.jestConfig": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.passWithNoTests": [
-      "apps/backend-e2e/project.json",
-      "nx/core/project-json"
-    ]
-  },
   "apps/frontend": {
     "root": [
       "apps/frontend/project.json",
