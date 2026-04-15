@@ -97,14 +97,29 @@ Odpoveď:
       this.logger.log('Response generated successfully');
       this.logger.log(`LLM Response: ${answer}`);
 
-      // 5. Append all chunks with their full content and sources
+      // 5. Append sources grouped by file with slide numbers
       if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
+        // Group chunks by source file
+        const groupedBySource: Record<string, number[]> = retrievedChunks.reduce((acc, chunk) => {
+          if (!acc[chunk.source]) {
+            acc[chunk.source] = [];
+          }
+          acc[chunk.source].push(chunk.slideNumber);
+          return acc;
+        }, {} as Record<string, number[]>);
+
         answer += '\n\n---\n**Zdroje:**\n';
-        retrievedChunks.forEach((chunk, idx) => {
+        
+        Object.entries(groupedBySource).forEach(([source, slideNumbers]) => {
           // Extract just the filename from the source path (e.g., "VAII/1.pptx" -> "1.pptx")
-          const fileName = chunk.source.split('/').pop();
+          const fileName = source.split('/').pop();
           const fileUrl = `http://localhost:3000/files/${fileName}`;
-          answer += `\n**${idx + 1}. [${chunk.source}](${fileUrl}) | Slide ${chunk.slideNumber}**\n${chunk.text}\n`;
+          
+          // Sort and format slide numbers
+          const sortedSlides = [...new Set(slideNumbers)].sort((a: number, b: number) => a - b);
+          const slideList = sortedSlides.join(', ');
+          
+          answer += `\n[${source}](${fileUrl}) - s. ${slideList}`;
         });
       }
 
