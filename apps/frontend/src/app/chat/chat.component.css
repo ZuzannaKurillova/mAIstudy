@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
-
 :host {
-  --bg: #0d0d0d;
-  --surface: #1a1a1a;
-  --accent: #4f8ef7;
-  --text: #e8e8e8;
-  --font: 'JetBrains Mono', monospace;
+  --bg: #212121;
+  --surface: #2f2f2f;
+  --input-bg: #40414f;
+  --text: #ececec;
+  --text-secondary: #c5c5d2;
+  --border: #565869;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .chat-container {
@@ -18,16 +18,16 @@
 }
 
 .header {
-  padding: 1.5rem 2rem;
-  background-color: var(--surface);
-  border-bottom: 2px solid var(--accent);
+  padding: 1rem 2rem;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
 }
 
 .header h1 {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .message-area {
@@ -41,7 +41,7 @@
 
 .message {
   display: flex;
-  max-width: 70%;
+  width: 100%;
   animation: fadeIn 0.3s ease-in;
 }
 
@@ -57,26 +57,31 @@
 }
 
 .user-message {
-  align-self: flex-end;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .ai-message {
-  align-self: flex-start;
+  justify-content: flex-start;
 }
 
 .message-content {
-  padding: 1rem 1.5rem;
-  background-color: var(--surface);
-  border-radius: 8px;
+  padding: 0.875rem 1.25rem;
+  max-width: 75%;
+  border-radius: 18px;
   word-wrap: break-word;
   white-space: pre-wrap;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 .user-message .message-content {
-  background-color: var(--accent);
-  color: #ffffff;
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.ai-message .message-content {
+  background-color: transparent;
+  color: var(--text);
 }
 
 .loading-cursor {
@@ -95,32 +100,35 @@
 
 .input-row {
   display: flex;
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  background-color: var(--surface);
-  border-top: 2px solid var(--accent);
+  gap: 0.75rem;
+  padding: 1.5rem 2rem 2rem;
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .message-input {
   flex: 1;
-  padding: 0.75rem 1rem;
-  background-color: var(--bg);
-  border: 1px solid var(--accent);
-  border-radius: 4px;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
   color: var(--text);
   font-family: var(--font);
-  font-size: 0.95rem;
+  font-size: 1rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition: all 0.2s;
 }
 
 .message-input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(79, 142, 247, 0.2);
+  border-color: #8e8ea0;
+  background-color: #40414f;
 }
 
 .message-input::placeholder {
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .message-input:disabled {
@@ -129,29 +137,28 @@
 }
 
 .send-button {
-  padding: 0.75rem 2rem;
-  background-color: var(--accent);
-  color: #ffffff;
+  padding: 0.875rem 1.75rem;
+  background-color: var(--text);
+  color: var(--bg);
   border: none;
-  border-radius: 4px;
+  border-radius: 24px;
   font-family: var(--font);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+  transition: all 0.2s;
 }
 
 .send-button:hover:not(:disabled) {
-  background-color: #3a7de8;
-  transform: translateY(-1px);
+  background-color: #d1d1d6;
 }
 
 .send-button:active:not(:disabled) {
-  transform: translateY(0);
+  transform: scale(0.98);
 }
 
 .send-button:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
@@ -164,10 +171,22 @@
 }
 
 .message-area::-webkit-scrollbar-thumb {
-  background: var(--accent);
+  background: var(--border);
   border-radius: 4px;
 }
 
 .message-area::-webkit-scrollbar-thumb:hover {
-  background: #3a7de8;
+  background: #6e6e80;
+}
+
+/* Link styling for sources */
+.message-content a {
+  color: #8ab4f8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.message-content a:hover {
+  color: #aac7ff;
+  text-decoration: underline;
 }
