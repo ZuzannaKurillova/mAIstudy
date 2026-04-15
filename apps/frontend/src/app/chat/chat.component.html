@@ -24,7 +24,13 @@
               <span class="loading-cursor">▊</span>
             </div>
           } @else {
-            <app-slide [title]="message.title || ''" [content]="message.content || ''" [sources]="message.sources || ''"></app-slide>
+            @if (message.isSlide) {
+              <app-slide [title]="message.title || ''" [content]="message.content || ''" [sources]="message.sources || ''"></app-slide>
+            } @else {
+              <div class="message-content ai-plain-text">
+                <span>{{ message.text }}</span>
+              </div>
+            }
           }
         }
       </div>

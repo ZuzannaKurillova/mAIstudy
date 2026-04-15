@@ -83,6 +83,12 @@
   width: 100%;
 }
 
+.ai-plain-text {
+  background-color: var(--surface);
+  color: var(--text);
+  max-width: 75%;
+}
+
 .loading-cursor {
   animation: blink 1s infinite;
   font-size: 1.2rem;

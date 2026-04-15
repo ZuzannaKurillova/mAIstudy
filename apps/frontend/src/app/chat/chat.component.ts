@@ -11,6 +11,7 @@ interface Message {
   sources?: string;
   isUser: boolean;
   isLoading?: boolean;
+  isSlide?: boolean;
 }
 
 @Component({
@@ -92,15 +93,30 @@ export class ChatComponent {
     this.chatService.sendMessage(userMessage).subscribe({
       next: (response) => {
         console.log('Received response:', response);
-        const processed = this.processResponse(response.answer);
-        this.messages[this.messages.length - 1] = {
-          text: response.answer,
-          title: processed.title,
-          content: processed.content,
-          sources: processed.sources,
-          isUser: false,
-          isLoading: false,
-        };
+        const cannotAnswer = response.answer.toLowerCase().includes('neviem odpovedať') || 
+                            response.answer.toLowerCase().includes('na základe prednášok neviem odpovedať');
+        
+        if (cannotAnswer) {
+          // Plain text response for "cannot answer"
+          this.messages[this.messages.length - 1] = {
+            text: response.answer,
+            isUser: false,
+            isLoading: false,
+            isSlide: false,
+          };
+        } else {
+          // Slide format for normal answers
+          const processed = this.processResponse(response.answer);
+          this.messages[this.messages.length - 1] = {
+            text: response.answer,
+            title: processed.title,
+            content: processed.content,
+            sources: processed.sources,
+            isUser: false,
+            isLoading: false,
+            isSlide: true,
+          };
+        }
         this.isProcessing = false;
         this.cdr.detectChanges();
         this.scrollToBottom();
