@@ -1,17 +1,21 @@
 import { Component, ChangeDetectorRef, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChatService } from './chat.service';
+import { SlideComponent } from './slide/slide.component';
 
 interface Message {
   text: string;
   html?: string;
+  title?: string;
+  content?: string;
+  sources?: string;
   isUser: boolean;
   isLoading?: boolean;
 }
 
 @Component({
   selector: 'app-chat',
-  imports: [FormsModule],
+  imports: [FormsModule, SlideComponent],
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css'],
   standalone: true,
@@ -24,14 +28,53 @@ export class ChatComponent {
   userInput = '';
   isProcessing = false;
 
-  convertMarkdownToHtml(text: string): string {
-    // Convert markdown links [text](url) to HTML <a> tags
-    let html = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    // Convert **bold** to <strong>
-    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    // Convert newlines to <br>
-    html = html.replace(/\n/g, '<br>');
-    return html;
+  processResponse(text: string): { title: string; content: string; sources: string } {
+    // Split content and sources
+    const parts = text.split('---');
+    const mainContent = parts[0].trim();
+    const sources = parts.length > 1 ? parts[1].trim() : '';
+    
+    // Extract first line as title
+    const contentLines = mainContent.split('\n');
+    const title = contentLines[0].trim();
+    const restOfContent = contentLines.slice(1).join('\n').trim();
+    
+    // Convert markdown in remaining content
+    let contentHtml = restOfContent.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    contentHtml = contentHtml.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    
+    // Convert bullet points to proper list items
+    const lines = contentHtml.split('\n');
+    let formattedContent = '';
+    let inList = false;
+    
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
+        if (!inList) {
+          formattedContent += '<ul>';
+          inList = true;
+        }
+        formattedContent += `<li>${trimmed.substring(1).trim()}</li>`;
+      } else if (trimmed) {
+        if (inList) {
+          formattedContent += '</ul>';
+          inList = false;
+        }
+        formattedContent += `<p>${trimmed}</p>`;
+      }
+    }
+    if (inList) formattedContent += '</ul>';
+    
+    // Convert sources section
+    let sourcesHtml = '';
+    if (sources) {
+      sourcesHtml = sources.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+      sourcesHtml = sourcesHtml.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      sourcesHtml = sourcesHtml.replace(/\n/g, '<br>');
+    }
+    
+    return { title, content: formattedContent, sources: sourcesHtml };
   }
 
   sendMessage(): void {
@@ -49,9 +92,12 @@ export class ChatComponent {
     this.chatService.sendMessage(userMessage).subscribe({
       next: (response) => {
         console.log('Received response:', response);
+        const processed = this.processResponse(response.answer);
         this.messages[this.messages.length - 1] = {
           text: response.answer,
-          html: this.convertMarkdownToHtml(response.answer),
+          title: processed.title,
+          content: processed.content,
+          sources: processed.sources,
           isUser: false,
           isLoading: false,
         };

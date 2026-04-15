@@ -10,17 +10,23 @@
         [class.user-message]="message.isUser"
         [class.ai-message]="!message.isUser"
       >
-        <div class="message-content">
+        @if (message.isUser) {
+          <div class="message-content">
+            @if (message.isLoading) {
+              <span class="loading-cursor">▊</span>
+            } @else {
+              <span>{{ message.text }}</span>
+            }
+          </div>
+        } @else {
           @if (message.isLoading) {
-            <span class="loading-cursor">▊</span>
+            <div class="message-content">
+              <span class="loading-cursor">▊</span>
+            </div>
+          } @else {
+            <app-slide [title]="message.title || ''" [content]="message.content || ''" [sources]="message.sources || ''"></app-slide>
           }
-          @if (!message.isLoading && message.isUser) {
-            <span>{{ message.text }}</span>
-          }
-          @if (!message.isLoading && !message.isUser) {
-            <span [innerHTML]="message.html || message.text"></span>
-          }
-        </div>
+        }
       </div>
     }
   </div>

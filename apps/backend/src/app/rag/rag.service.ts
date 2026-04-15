@@ -95,6 +95,7 @@ export class RagService implements OnModuleInit {
       text: doc,
       source: metadatas[i]?.source,
       slideNumber: metadatas[i]?.slideNumber,
+      slideTitle: metadatas[i]?.slideTitle,
       score: distances[i],
     }));
 

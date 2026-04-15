@@ -1,0 +1,8 @@
+<div class="slide-container">
+  <div class="slide-top-bar"></div>
+  <div class="slide-header">{{ title }}</div>
+  <div class="slide-content" [innerHTML]="content"></div>
+  @if (sources) {
+    <div class="slide-footer" [innerHTML]="sources"></div>
+  }
+</div>

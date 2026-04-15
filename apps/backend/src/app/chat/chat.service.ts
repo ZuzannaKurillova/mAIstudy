@@ -97,8 +97,15 @@ Odpoveď:
       this.logger.log('Response generated successfully');
       this.logger.log(`LLM Response: ${answer}`);
 
-      // 5. Append sources grouped by file with slide numbers
+      // 5. Prepend slide titles and append sources
       if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
+        // Get unique slide titles from retrieved chunks
+        const slideTitles = [...new Set(retrievedChunks.map(chunk => chunk.slideTitle).filter(Boolean))];
+        
+        // Prepend the first slide title to the answer
+        if (slideTitles.length > 0) {
+          answer = `${slideTitles[0]}\n${answer}`;
+        }
         // Group chunks by source file
         const groupedBySource: Record<string, number[]> = retrievedChunks.reduce((acc, chunk) => {
           if (!acc[chunk.source]) {

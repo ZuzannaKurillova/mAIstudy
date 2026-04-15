@@ -79,9 +79,8 @@
   color: var(--text);
 }
 
-.ai-message .message-content {
-  background-color: transparent;
-  color: var(--text);
+.ai-message {
+  width: 100%;
 }
 
 .loading-cursor {

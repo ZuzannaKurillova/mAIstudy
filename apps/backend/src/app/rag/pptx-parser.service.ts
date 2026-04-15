@@ -12,6 +12,7 @@ export interface TextChunk {
     source: string;
     chunkIndex: number;
     slideNumber: number;
+    slideTitle?: string;
   };
 }
 
@@ -39,7 +40,7 @@ export class PptxParserService {
     return allChunks;
   }
 
-  private async extractSlides(pptxPath: string): Promise<{ text: string; slideNumber: number }[]> {
+  private async extractSlides(pptxPath: string): Promise<{ text: string; slideNumber: number; title: string }[]> {
     const tempDir = path.join('/tmp', `pptx_${Date.now()}`);
 
     try {
@@ -75,11 +76,14 @@ export class PptxParserService {
         ).filter(Boolean);
 
         if (texts.length > 0) {
+          // First text element is typically the title
+          const title = texts[0];
           const slideText = texts.join('\n• ');
 
           slides.push({
             text: slideText,
             slideNumber: actualSlideNumber,
+            title: title,
           });
         }
       }
@@ -94,7 +98,7 @@ export class PptxParserService {
   }
 
   private createChunksFromSlides(
-    slides: { text: string; slideNumber: number }[],
+    slides: { text: string; slideNumber: number; title: string }[],
     source: string
   ): TextChunk[] {
     return slides.map((slide, idx) => ({
@@ -103,6 +107,7 @@ export class PptxParserService {
         source,
         chunkIndex: idx,
         slideNumber: slide.slideNumber,
+        slideTitle: slide.title,
       },
     }));
   }
