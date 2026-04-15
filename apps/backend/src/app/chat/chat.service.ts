@@ -51,8 +51,13 @@ export class ChatService {
         .join('\n\n');
 
       // 3. STRICT extractive prompt
-      const prompt = `You are an extraction system for studens. Make a summary of all the chunks being sent to you. If there are no chunks, answer: "Na základe prednášok neviem odpovedať."
-      Always answer in English.
+      const prompt = `Si extrakčný systém pre študentov.
+
+Tvoja úloha:
+IMPORTANT: NEVYTVÁRAJ nové vety. Použi výhradne text z kontextu v presne takom znení, v akom je uvedený v prednáške. Doslova copy-paste.
+
+Ak odpoveď nie je v kontexte, odpíš:
+"Na základe prednášok neviem odpovedať."
 
 --- KONTEXT ---
 ${context}
@@ -96,7 +101,10 @@ Odpoveď:
       if (retrievedChunks.length > 0 && !answer.includes('neviem odpovedať')) {
         answer += '\n\n---\n**Zdroje:**\n';
         retrievedChunks.forEach((chunk, idx) => {
-          answer += `\n**${idx + 1}. ${chunk.source} | Slide ${chunk.slideNumber}**\n${chunk.text}\n`;
+          // Extract just the filename from the source path (e.g., "VAII/1.pptx" -> "1.pptx")
+          const fileName = chunk.source.split('/').pop();
+          const fileUrl = `http://localhost:3000/files/${fileName}`;
+          answer += `\n**${idx + 1}. [${chunk.source}](${fileUrl}) | Slide ${chunk.slideNumber}**\n${chunk.text}\n`;
         });
       }
 

@@ -4,17 +4,25 @@
   </div>
 
   <div class="message-area">
-    <div
-      *ngFor="let message of messages"
-      class="message"
-      [class.user-message]="message.isUser"
-      [class.ai-message]="!message.isUser"
-    >
-      <div class="message-content">
-        <span *ngIf="message.isLoading" class="loading-cursor">▊</span>
-        <span *ngIf="!message.isLoading">{{ message.text }}</span>
+    @for (message of messages; track message) {
+      <div
+        class="message"
+        [class.user-message]="message.isUser"
+        [class.ai-message]="!message.isUser"
+      >
+        <div class="message-content">
+          @if (message.isLoading) {
+            <span class="loading-cursor">▊</span>
+          }
+          @if (!message.isLoading && message.isUser) {
+            <span>{{ message.text }}</span>
+          }
+          @if (!message.isLoading && !message.isUser) {
+            <span [innerHTML]="message.html || message.text"></span>
+          }
+        </div>
       </div>
-    </div>
+    }
   </div>
 
   <div class="input-row">

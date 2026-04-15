@@ -1,29 +1,38 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectorRef, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChatService } from './chat.service';
 
 interface Message {
   text: string;
+  html?: string;
   isUser: boolean;
   isLoading?: boolean;
 }
 
 @Component({
   selector: 'app-chat',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css'],
+  standalone: true,
 })
 export class ChatComponent {
+  private chatService = inject(ChatService);
+  private cdr = inject(ChangeDetectorRef);
+
   messages: Message[] = [];
   userInput = '';
   isProcessing = false;
 
-  constructor(
-    private chatService: ChatService,
-    private cdr: ChangeDetectorRef
-  ) {}
+  convertMarkdownToHtml(text: string): string {
+    // Convert markdown links [text](url) to HTML <a> tags
+    let html = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    // Convert **bold** to <strong>
+    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    // Convert newlines to <br>
+    html = html.replace(/\n/g, '<br>');
+    return html;
+  }
 
   sendMessage(): void {
     if (!this.userInput.trim() || this.isProcessing) {
@@ -42,6 +51,7 @@ export class ChatComponent {
         console.log('Received response:', response);
         this.messages[this.messages.length - 1] = {
           text: response.answer,
+          html: this.convertMarkdownToHtml(response.answer),
           isUser: false,
           isLoading: false,
         };
