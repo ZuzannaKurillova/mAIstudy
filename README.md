@@ -114,23 +114,23 @@ The frontend will be available at http://localhost:4200
 
 ## 🧪 Testing
 
-### Test with Slovakia-specific Query
+### Test with Query that is in the course presentations
 
 Open http://localhost:4200 and ask:
 ```
-What are the best places to visit in Slovakia?
+What are the disadvantages of the web applications?
 ```
 
-**Expected**: The AI will provide answers based on the indexed brochure content, citing specific towns, landmarks, and details from the documents.
+**Expected**: The AI will provide answers based on the indexed presentation content, citing specific slides, giving the sources that student can further check when clicking them.
 
-### Test with General Query
+### Test with General Query that is not in the presentations
 
 Ask:
 ```
 What are the best places to visit in Paris?
 ```
 
-**Expected**: The AI will provide a general answer using its base knowledge, without Slovakia-specific brochure content.
+**Expected**: The AI will provide a negative answer that this information hasn't been part of the presentations.
 
 ## 📁 Project Structure
 
