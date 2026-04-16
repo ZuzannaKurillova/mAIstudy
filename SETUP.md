@@ -1,7 +1,7 @@
 # mAItravel2 - Setup Instructions
 
 ## Overview
-A travel AI assistant combining Ollama (local AI) with Slovakia brochure data via RAG (Retrieval-Augmented Generation).
+A study AI assistant combining Ollama (local AI) with powerpoint presentation of a lecture data via RAG (Retrieval-Augmented Generation).
 
 **Note:** Uses hash-based embeddings for vector search and Ollama's `llama3.2` model for chat generation.
 
@@ -48,7 +48,7 @@ nx serve backend
 The backend will:
 - Start on http://localhost:3000
 - Connect to ChromaDB
-- Parse PDF brochures on first run
+- Parse pptx presentation on first run
 - Generate embeddings and store them in ChromaDB
 - Be ready to handle chat requests
 
@@ -96,7 +96,7 @@ Response → Browser
 - `apps/backend/src/app/chat/chat.service.ts` - Gemini integration
 - `apps/backend/src/app/rag/rag.service.ts` - RAG orchestration
 - `apps/backend/src/app/rag/embedding.service.ts` - Text embeddings
-- `apps/backend/src/app/rag/pdf-parser.service.ts` - PDF parsing
+- `apps/backend/src/app/rag/pptx-parser.service.ts` - pptx parsing
 
 ### Frontend
 - `apps/frontend/src/app/chat/chat.component.ts` - Chat UI
@@ -117,11 +117,6 @@ nx build frontend
 ### ChromaDB Connection Issues
 - Ensure Docker is running: `docker ps`
 - Check ChromaDB logs: `docker compose logs chromadb`
-
-### PDF Parsing Errors
-- Verify PDF files exist in workspace root:
-  - `Slovakia_near and full of surprises (2).pdf`
-  - `brochure_en_slovakia.pdf`
 
 ### Gemini API Errors
 - Verify API key is set correctly in `.env`
